@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,91 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlarmChartsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-eI-6c0">
+                                <rect key="frame" x="160" y="239" width="704" height="908"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKQ-np-FzS" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="20" y="588" width="280" height="280"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="0VB-NN-l1z"/>
+                                            <constraint firstAttribute="width" secondItem="YKQ-np-FzS" secondAttribute="height" multiplier="1:1" id="82S-uy-OUe"/>
+                                            <constraint firstAttribute="width" constant="280" id="kpF-Op-3jC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcU-ym-OOX" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="504" y="588" width="280" height="280"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Nou-HL-Kfo"/>
+                                            <constraint firstAttribute="height" constant="280" id="U0b-oU-xu3"/>
+                                            <constraint firstAttribute="width" secondItem="jcU-ym-OOX" secondAttribute="height" multiplier="1:1" id="U9Y-It-KCm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFv-zz-Udy" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="504" y="20" width="280" height="280"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="YFv-zz-Udy" secondAttribute="height" multiplier="1:1" id="8AA-yt-0CE"/>
+                                            <constraint firstAttribute="height" constant="280" id="tcE-zU-fA5"/>
+                                            <constraint firstAttribute="width" constant="280" id="zjO-mV-g72"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2E-Sm-kxS" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="20" y="20" width="280" height="280"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="KGy-7f-R7a"/>
+                                            <constraint firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="height" multiplier="1:1" id="hoH-Gr-IGl"/>
+                                            <constraint firstAttribute="width" constant="280" id="uJL-Cc-EUU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="8bb-Lz-mWF"/>
+                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="leading" secondItem="Z2E-Sm-kxS" secondAttribute="trailing" constant="204" id="8qS-T8-C1r"/>
+                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="9fA-gk-ZXS"/>
+                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="Fyl-gu-wfp"/>
+                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="leading" secondItem="jcU-ym-OOX" secondAttribute="leading" id="H40-MR-com"/>
+                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="P2j-ey-Kyn"/>
+                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="top" secondItem="YFv-zz-Udy" secondAttribute="bottom" constant="288" id="Wpc-Ca-gOg"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="top" secondItem="Hbe-eI-6c0" secondAttribute="top" constant="20" id="f1S-sr-1zm"/>
+                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="mNd-nV-HEN"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="centerY" secondItem="YFv-zz-Udy" secondAttribute="centerY" id="peH-Vs-QPu"/>
+                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="centerY" secondItem="jcU-ym-OOX" secondAttribute="centerY" id="tQf-fi-42Q"/>
+                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="tvA-nO-ZyM"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="leading" secondItem="YKQ-np-FzS" secondAttribute="leading" id="xNs-1P-S7a"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="leading" secondItem="Hbe-eI-6c0" secondAttribute="leading" constant="20" id="yw5-d2-t5G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hbe-eI-6c0" secondAttribute="bottom" constant="219" id="21a-Nd-yzI"/>
+                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6Mu-9X-kQK"/>
+                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="DY4-mc-Bgu"/>
+                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FU2-da-iQQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hbe-eI-6c0" secondAttribute="trailing" constant="160" id="GQz-eB-T5x"/>
+                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="219" id="gbB-dp-yul"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chillerFour" destination="jcU-ym-OOX" id="fu8-0c-WC0"/>
+                        <outlet property="chillerOne" destination="Z2E-Sm-kxS" id="Kxs-yy-VAs"/>
+                        <outlet property="chillerThree" destination="YKQ-np-FzS" id="0jT-Xe-zFE"/>
+                        <outlet property="chillerTwo" destination="YFv-zz-Udy" id="sRJ-m1-mva"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="69.7265625" y="62.811127379209367"/>
         </scene>
     </scenes>
 </document>
