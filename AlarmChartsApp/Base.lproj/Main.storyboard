@@ -18,73 +18,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-eI-6c0">
-                                <rect key="frame" x="160" y="239" width="704" height="908"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwb-L6-AWE">
+                                <rect key="frame" x="110" y="230" width="804" height="926"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKQ-np-FzS" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="20" y="588" width="280" height="280"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2E-Sm-kxS" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="20" y="20" width="280" height="280"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="0VB-NN-l1z"/>
-                                            <constraint firstAttribute="width" secondItem="YKQ-np-FzS" secondAttribute="height" multiplier="1:1" id="82S-uy-OUe"/>
-                                            <constraint firstAttribute="width" constant="280" id="kpF-Op-3jC"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcU-ym-OOX" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="504" y="588" width="280" height="280"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="280" id="Nou-HL-Kfo"/>
-                                            <constraint firstAttribute="height" constant="280" id="U0b-oU-xu3"/>
-                                            <constraint firstAttribute="width" secondItem="jcU-ym-OOX" secondAttribute="height" multiplier="1:1" id="U9Y-It-KCm"/>
+                                            <constraint firstAttribute="height" constant="280" id="Q1k-f8-fke"/>
+                                            <constraint firstAttribute="width" constant="280" id="RsA-We-igd"/>
+                                            <constraint firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="height" multiplier="1:1" id="ug2-gD-0Lm"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFv-zz-Udy" customClass="PieChartView" customModule="Charts">
                                         <rect key="frame" x="504" y="20" width="280" height="280"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="YFv-zz-Udy" secondAttribute="height" multiplier="1:1" id="8AA-yt-0CE"/>
-                                            <constraint firstAttribute="height" constant="280" id="tcE-zU-fA5"/>
-                                            <constraint firstAttribute="width" constant="280" id="zjO-mV-g72"/>
+                                            <constraint firstAttribute="height" constant="280" id="ao3-TA-AkZ"/>
+                                            <constraint firstAttribute="width" constant="280" id="ccF-Ol-2LE"/>
+                                            <constraint firstAttribute="width" secondItem="YFv-zz-Udy" secondAttribute="height" multiplier="1:1" id="kRk-6e-SaU"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2E-Sm-kxS" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="20" y="20" width="280" height="280"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcU-ym-OOX" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="504" y="626" width="280" height="280"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="KGy-7f-R7a"/>
-                                            <constraint firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="height" multiplier="1:1" id="hoH-Gr-IGl"/>
-                                            <constraint firstAttribute="width" constant="280" id="uJL-Cc-EUU"/>
+                                            <constraint firstAttribute="height" constant="280" id="7MU-8V-J0h"/>
+                                            <constraint firstAttribute="width" secondItem="jcU-ym-OOX" secondAttribute="height" multiplier="1:1" id="Y9v-HK-aGI"/>
+                                            <constraint firstAttribute="width" constant="280" id="yuf-q8-p4m"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKQ-np-FzS" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="20" y="626" width="280" height="280"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="KBi-RA-Pua"/>
+                                            <constraint firstAttribute="width" constant="280" id="Y6B-0l-3nw"/>
+                                            <constraint firstAttribute="width" secondItem="YKQ-np-FzS" secondAttribute="height" multiplier="1:1" id="zGX-mr-r8n"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="8bb-Lz-mWF"/>
-                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="leading" secondItem="Z2E-Sm-kxS" secondAttribute="trailing" constant="204" id="8qS-T8-C1r"/>
-                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="9fA-gk-ZXS"/>
-                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="Fyl-gu-wfp"/>
-                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="leading" secondItem="jcU-ym-OOX" secondAttribute="leading" id="H40-MR-com"/>
-                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="P2j-ey-Kyn"/>
-                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="top" secondItem="YFv-zz-Udy" secondAttribute="bottom" constant="288" id="Wpc-Ca-gOg"/>
-                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="top" secondItem="Hbe-eI-6c0" secondAttribute="top" constant="20" id="f1S-sr-1zm"/>
-                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="mNd-nV-HEN"/>
-                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="centerY" secondItem="YFv-zz-Udy" secondAttribute="centerY" id="peH-Vs-QPu"/>
-                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="centerY" secondItem="jcU-ym-OOX" secondAttribute="centerY" id="tQf-fi-42Q"/>
-                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="tvA-nO-ZyM"/>
-                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="leading" secondItem="YKQ-np-FzS" secondAttribute="leading" id="xNs-1P-S7a"/>
-                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="leading" secondItem="Hbe-eI-6c0" secondAttribute="leading" constant="20" id="yw5-d2-t5G"/>
+                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="leading" secondItem="YKQ-np-FzS" secondAttribute="trailing" constant="204" id="2Js-ff-D6B"/>
+                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="CdZ-UZ-srM"/>
+                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="CtF-Uu-qbR"/>
+                                    <constraint firstItem="YFv-zz-Udy" firstAttribute="leading" secondItem="Z2E-Sm-kxS" secondAttribute="trailing" constant="204" id="FT5-Cz-gya"/>
+                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="Fa3-fR-flj"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="centerX" secondItem="YKQ-np-FzS" secondAttribute="centerX" id="I2c-77-tsD"/>
+                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="height" secondItem="Z2E-Sm-kxS" secondAttribute="height" id="IZD-ah-MdT"/>
+                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="top" secondItem="Z2E-Sm-kxS" secondAttribute="bottom" constant="326" id="Krl-ov-zn4"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="top" secondItem="rwb-L6-AWE" secondAttribute="top" constant="20" id="LgN-Os-zCp"/>
+                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="centerY" secondItem="jcU-ym-OOX" secondAttribute="centerY" id="QAn-rI-f4i"/>
+                                    <constraint firstItem="YKQ-np-FzS" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="QpV-1f-DhR"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="leading" secondItem="rwb-L6-AWE" secondAttribute="leading" constant="20" id="S4O-n2-nLa"/>
+                                    <constraint firstAttribute="bottom" secondItem="jcU-ym-OOX" secondAttribute="bottom" constant="20" id="ddU-BQ-AKm"/>
+                                    <constraint firstItem="Z2E-Sm-kxS" firstAttribute="centerY" secondItem="YFv-zz-Udy" secondAttribute="centerY" id="m2T-4t-JHV"/>
+                                    <constraint firstItem="jcU-ym-OOX" firstAttribute="width" secondItem="Z2E-Sm-kxS" secondAttribute="width" id="r2K-Eh-969"/>
+                                    <constraint firstAttribute="trailing" secondItem="YFv-zz-Udy" secondAttribute="trailing" constant="20" id="wEP-lg-rYW"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hbe-eI-6c0" secondAttribute="bottom" constant="219" id="21a-Nd-yzI"/>
-                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6Mu-9X-kQK"/>
-                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="DY4-mc-Bgu"/>
-                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FU2-da-iQQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hbe-eI-6c0" secondAttribute="trailing" constant="160" id="GQz-eB-T5x"/>
-                            <constraint firstItem="Hbe-eI-6c0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="219" id="gbB-dp-yul"/>
+                            <constraint firstItem="rwb-L6-AWE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gHG-9e-OJf"/>
+                            <constraint firstItem="rwb-L6-AWE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s1P-8z-qGR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
