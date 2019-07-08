@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		CC5D8DBA22C99ABC003793CE /* AlarmChartsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC5D8DB822C99ABC003793CE /* AlarmChartsApp.xcdatamodeld */; };
 		CC5D8DBC22C99ABF003793CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DBB22C99ABF003793CE /* Assets.xcassets */; };
 		CC5D8DBF22C99ABF003793CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DBD22C99ABF003793CE /* LaunchScreen.storyboard */; };
+		CC8BFB9E22CDD62B00871EE7 /* LineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CC5D8DBB22C99ABF003793CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5D8DBE22C99ABF003793CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5D8DC022C99ABF003793CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				1417C0AE1ADC40EC5806DE2C /* Pods-AlarmChartsApp.debug.xcconfig */,
 				742E07C93F5F22EC2AEEC9A9 /* Pods-AlarmChartsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 			children = (
 				CC5D8DB122C99ABC003793CE /* AppDelegate.swift */,
 				CC5D8DB322C99ABC003793CE /* ViewController.swift */,
+				CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */,
 				CC5D8DB522C99ABC003793CE /* Main.storyboard */,
 				CC5D8DBB22C99ABF003793CE /* Assets.xcassets */,
 				CC5D8DBD22C99ABF003793CE /* LaunchScreen.storyboard */,
@@ -209,6 +211,7 @@
 			files = (
 				CC5D8DB422C99ABC003793CE /* ViewController.swift in Sources */,
 				CC5D8DBA22C99ABC003793CE /* AlarmChartsApp.xcdatamodeld in Sources */,
+				CC8BFB9E22CDD62B00871EE7 /* LineChartController.swift in Sources */,
 				CC5D8DB222C99ABC003793CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
