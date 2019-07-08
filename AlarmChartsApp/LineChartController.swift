@@ -36,6 +36,15 @@ class LineChartController: UIViewController {
             let value = ChartDataEntry(x: Double(i), y: numbers[i])
             lineChartEntry.append(value)
         }
+        let line1 = LineChartDataSet(entries: lineChartEntry, label: "Number")
+        
+        line1.colors = [NSUIColor.blue]
+        let data = LineChartData()
+        data.addDataSet(line1)
+        lineChart.data = data
+        lineChart.chartDescription?.text = "does it work"
+        
+        
     }
 
 
