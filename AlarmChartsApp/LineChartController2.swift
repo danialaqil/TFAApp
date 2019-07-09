@@ -15,10 +15,12 @@ class LineChartController2: UIViewController {
     
     @IBOutlet weak internal var textField: UITextField!
     
-    var numbers: [Double] = []
+    var numbers: [Double] = [1,43,5,75,23,07,35,54,67,11]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.topItem?.title = "Chiller 2"
+        updateGraph()
     }
     
     override func didReceiveMemoryWarning() {

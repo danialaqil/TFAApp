@@ -12,11 +12,16 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let navigationbarAppearance = UINavigationBar.appearance()
+        navigationbarAppearance.tintColor = .white
+        navigationbarAppearance.barTintColor = UIColor(red: 21/255, green: 101/255, blue: 192/255, alpha: 1)
+
         return true
     }
 

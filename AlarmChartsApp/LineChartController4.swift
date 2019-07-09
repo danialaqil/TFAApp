@@ -15,10 +15,13 @@ class LineChartController4: UIViewController {
     
     @IBOutlet weak var lineChart: LineChartView!
     
-    var numbers : [Double] = []
+    var numbers : [Double] = [12,66,3,12,86,33,75,2,97]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.topItem?.title = "Chiller 4"
+        
+        updateGraph()
         // Do any additional setup after loading the view.
     }
     

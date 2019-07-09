@@ -79,9 +79,11 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
         
         //theming
         view.backgroundColor = .white
+        navigationController?.navigationBar.topItem?.title = "History"
         navigationController?.navigationBar.barTintColor = UIColor(red: 21/255, green: 101/255, blue: 192/255, alpha: 1)
         navigationController?.navigationBar.tintColor = .white
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Alarm", style: .plain, target: self, action: #selector(addAlarmItem))
+        navigationController?.navigationBar.topItem?.title = "History"
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Export CSV", style: .plain, target: self, action: #selector(exportCSV))
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
