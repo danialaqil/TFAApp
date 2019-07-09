@@ -439,7 +439,7 @@
         <scene sceneID="DJi-AO-kfV">
             <objects>
                 <viewController id="2ly-Rs-09C" customClass="HistoryController" customModule="AlarmChartsApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SJb-c0-SLK">
+                    <view key="view" contentMode="scaleToFill" id="SJb-c0-SLK" customClass="UITableView">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
