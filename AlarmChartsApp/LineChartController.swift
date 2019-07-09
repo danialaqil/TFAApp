@@ -42,7 +42,7 @@ class LineChartController: UIViewController {
         let data = LineChartData()
         data.addDataSet(line1)
         lineChart.data = data
-        lineChart.chartDescription?.text = "does it work"
+        lineChart.chartDescription?.text = "Chiller 1"
         
         
     }

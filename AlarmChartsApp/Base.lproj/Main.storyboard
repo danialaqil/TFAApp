@@ -108,7 +108,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6U-hd-hBc" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="274" width="1024" height="1042"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LTy-J8-ZTj">
                                 <rect key="frame" x="20" y="153" width="655" height="30"/>
@@ -161,48 +161,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQB-xz-ZZh" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="274" width="1024" height="1042"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eI5-0x-8QN" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="345" width="1024" height="971"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-tH-9y7">
-                                <rect key="frame" x="20" y="153" width="655" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zqx-uy-9bv">
+                                <rect key="frame" x="20" y="190" width="661" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="655" id="WBM-gR-dKO"/>
+                                    <constraint firstAttribute="width" constant="661" id="dC4-5O-vrm"/>
                                 </constraints>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMe-MR-MCf">
-                                <rect key="frame" x="843" y="151" width="43" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-0T-0sB">
+                                <rect key="frame" x="856" y="190" width="37" height="30"/>
                                 <state key="normal" title="Enter">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="inputValue:" destination="9OJ-v2-GqC" eventType="touchUpInside" id="9fS-Hk-ZAA"/>
+                                    <action selector="inputValues:" destination="bGP-wZ-znj" eventType="touchUpInside" id="8VT-ln-M2h"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AQB-xz-ZZh" firstAttribute="leading" secondItem="wxk-GL-Vhn" secondAttribute="leading" id="3IM-Gs-fiV"/>
-                            <constraint firstItem="zzU-tH-9y7" firstAttribute="centerY" secondItem="nMe-MR-MCf" secondAttribute="centerY" id="5Gl-Af-I8J"/>
-                            <constraint firstItem="AQB-xz-ZZh" firstAttribute="bottom" secondItem="jtz-z8-MSI" secondAttribute="bottom" id="7ZR-br-yUV"/>
-                            <constraint firstItem="AQB-xz-ZZh" firstAttribute="top" secondItem="nMe-MR-MCf" secondAttribute="bottom" constant="89" id="ChM-aM-Ekt"/>
-                            <constraint firstItem="nMe-MR-MCf" firstAttribute="top" secondItem="jtz-z8-MSI" secondAttribute="top" constant="81" id="Dbm-Zq-19i"/>
-                            <constraint firstAttribute="trailing" secondItem="AQB-xz-ZZh" secondAttribute="trailing" id="HD0-9i-3Va"/>
-                            <constraint firstItem="jtz-z8-MSI" firstAttribute="trailing" secondItem="nMe-MR-MCf" secondAttribute="trailing" constant="138" id="Luz-ty-kja"/>
-                            <constraint firstItem="zzU-tH-9y7" firstAttribute="leading" secondItem="wxk-GL-Vhn" secondAttribute="leadingMargin" id="gGT-CT-Fuf"/>
+                            <constraint firstItem="eI5-0x-8QN" firstAttribute="bottom" secondItem="jtz-z8-MSI" secondAttribute="bottom" id="IqM-jz-Lbi"/>
+                            <constraint firstItem="eI5-0x-8QN" firstAttribute="leading" secondItem="wxk-GL-Vhn" secondAttribute="leading" id="ReX-ED-lLG"/>
+                            <constraint firstAttribute="trailing" secondItem="eI5-0x-8QN" secondAttribute="trailing" id="VfW-Wd-gbc"/>
+                            <constraint firstItem="Zqx-uy-9bv" firstAttribute="leading" secondItem="wxk-GL-Vhn" secondAttribute="leadingMargin" id="WA4-3E-alY"/>
+                            <constraint firstItem="jtz-z8-MSI" firstAttribute="trailing" secondItem="r3G-0T-0sB" secondAttribute="trailing" constant="131" id="cbm-WM-h7D"/>
+                            <constraint firstItem="eI5-0x-8QN" firstAttribute="top" secondItem="wxk-GL-Vhn" secondAttribute="top" constant="345" id="hbe-xa-Jr5"/>
+                            <constraint firstItem="Zqx-uy-9bv" firstAttribute="top" secondItem="r3G-0T-0sB" secondAttribute="top" id="jlZ-wn-tGX"/>
+                            <constraint firstItem="Zqx-uy-9bv" firstAttribute="top" secondItem="jtz-z8-MSI" secondAttribute="top" constant="120" id="wWI-nW-3tF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jtz-z8-MSI"/>
                     </view>
                     <navigationItem key="navigationItem" id="JIT-BN-lrA"/>
+                    <connections>
+                        <outlet property="lineChart" destination="eI5-0x-8QN" id="yJa-g0-Ig7"/>
+                        <outlet property="textField" destination="Zqx-uy-9bv" id="fIz-CN-cHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFz-rb-pSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2242" y="1403"/>
+            <point key="canvasLocation" x="2241.796875" y="1402.9282576866763"/>
         </scene>
         <!--Line Chart Controller3-->
         <scene sceneID="zdF-09-uSD">
@@ -232,7 +235,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="inputValue:" destination="9OJ-v2-GqC" eventType="touchUpInside" id="F1C-fO-Tug"/>
+                                    <action selector="inputValues:" destination="LGy-hz-V8q" eventType="touchUpInside" id="vQj-y0-nAy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -250,6 +253,10 @@
                         <viewLayoutGuide key="safeArea" id="yC7-Kr-v8O"/>
                     </view>
                     <navigationItem key="navigationItem" id="mCT-wc-rR9"/>
+                    <connections>
+                        <outlet property="lineChart" destination="xFg-t1-BW6" id="OB1-d8-U21"/>
+                        <outlet property="textField" destination="wpK-zG-u1i" id="gBO-QF-vbq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6O-xw-lf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -382,7 +389,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="inputValue:" destination="9OJ-v2-GqC" eventType="touchUpInside" id="oXU-Zo-oqi"/>
+                                    <action selector="inputValues:" destination="uti-xc-Dq4" eventType="touchUpInside" id="m4I-B0-RxB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -400,6 +407,10 @@
                         <viewLayoutGuide key="safeArea" id="Fj9-bC-8Uw"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cf4-4X-npY"/>
+                    <connections>
+                        <outlet property="lineChart" destination="U3E-lI-y8e" id="LKQ-CB-Qgb"/>
+                        <outlet property="textField" destination="HST-Gy-cAE" id="6DY-8W-48i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1J-8u-f9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
