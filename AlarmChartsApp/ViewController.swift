@@ -30,13 +30,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = "Summary"
         // Do any additional setup after loading the view.
-        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller1.map{ Double($0) }, pieChartView: chillerOne)
-        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller2.map{ Double($0) }, pieChartView: chillerTwo)
-        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller3.map{ Double($0) }, pieChartView: chillerThree)
-        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller4.map{ Double($0) }, pieChartView: chillerFour)
+        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller1.map{ Double($0) }, pieChartView: chillerOne, label: "Chiller 1")
+        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller2.map{ Double($0) }, pieChartView: chillerTwo, label: "Chiller 2")
+        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller3.map{ Double($0) }, pieChartView: chillerThree, label: "Chiller 3")
+        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller4.map{ Double($0) }, pieChartView: chillerFour, label: "Chiller 4")
     }
     func customizeChart (dataPoints: [String
-        ], values: [Double], pieChartView: PieChartView) {
+        ], values: [Double], pieChartView: PieChartView, label: String) {
         
         //1) set ChartDataEntry
         var dataEntries: [ChartDataEntry] = []
@@ -57,6 +57,8 @@ class ViewController: UIViewController {
         
         //4) assign it to chart's data
         pieChartView.data = pieChartData
+        
+        pieChartView.centerText = label
 
     }
     
