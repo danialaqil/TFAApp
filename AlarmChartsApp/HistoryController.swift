@@ -13,7 +13,6 @@ import MessageUI
 class HistoryController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     let cellId = "cellId"
-    var fetchedStatsArray: [NSManagedObject] = []
     
     fileprivate lazy var fetchedResultsController: NSFetchedResultsController<AlarmItem> = {
         //create fetch request
@@ -54,8 +53,6 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
             }
             break;
         case .update:
-            //this is mostlikely where the problem lies
-            //self.tableView.reloadData()
             if let indexPath = indexPath, let cell = tableView.cellForRow(at: indexPath) {
                 configureCell(cell, at: indexPath)
             }
@@ -72,7 +69,6 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
             print("Something odd is happening")
         }
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,7 +95,6 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
     }
     
     @objc func addAlarmItem(_ sender: AnyObject) {
-        //print("this works")
         let alertController = UIAlertController(title: "Add New Item", message: "Please fill in the blanks", preferredStyle: .alert)
         let saveAction = UIAlertAction(title: "Save", style: .default) { [unowned self] action in
             
@@ -133,12 +128,14 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
         //alertController.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
         alertController.addAction(saveAction)
         alertController.addAction(cancelAction)
+        /*
         let height:NSLayoutConstraint = NSLayoutConstraint(item: alertController.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.view.frame.height * 0.80)
         let width:NSLayoutConstraint = NSLayoutConstraint(item: alertController.view!, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 2, constant: self.view.frame.width * 0.80)
         
         //width doesnt work
         alertController.view.addConstraint(height)
         alertController.view.addConstraint(width)
+        */
         
         if let popoverController = alertController.popoverPresentationController {
             popoverController.sourceView = self.view;
@@ -155,6 +152,7 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
         let entity = NSEntityDescription.entity(forEntityName: "AlarmItem", in: managedContext)!
         let item = NSManagedObject(entity: entity, insertInto: managedContext)
         item.setValue(itemName, forKey: "alarmAttributes")
+        
         
         do {
             try managedContext.save()
@@ -213,8 +211,8 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
         var alarmAttributes: String?
         var export: String = NSLocalizedString("Engineer Name,Date of Alarm,Time of Alarm,True or False,Engineer Comments \n", comment: "")
         
-        for (index, AlarmItem) in fetchedStatsArray.enumerated() {
-            if index <= fetchedStatsArray.count - 1 {
+        for (index, AlarmItem) in (fetchedResultsController.fetchedObjects?.enumerated())! {
+            if index <= fetchedResultsController.fetchedObjects!.count - 1 {
                 alarmAttributes = AlarmItem.value(forKey: "alarmAttributes") as! String?
                 let alarmAttributeStrings = alarmAttributes
                 export += "\(alarmAttributeStrings ?? "0") \n"

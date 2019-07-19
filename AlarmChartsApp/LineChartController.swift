@@ -20,6 +20,7 @@ class LineChartController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = "Chiller 1"
         updateGraph()
+
     }
     
     

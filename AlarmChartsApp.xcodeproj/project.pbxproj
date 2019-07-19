@@ -18,6 +18,7 @@
 		CC65E17D22D3304400CEB2D2 /* LineChartController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */; };
 		CC65E17F22D3314D00CEB2D2 /* LineChartController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */; };
 		CC65E18122D3326900CEB2D2 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65E18022D3326900CEB2D2 /* HistoryController.swift */; };
+		CC6B1ED722D87C8D00444D48 /* chillerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B1ED622D87C8D00444D48 /* chillerOne.swift */; };
 		CC8BFB9E22CDD62B00871EE7 /* LineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController3.swift; sourceTree = "<group>"; };
 		CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController4.swift; sourceTree = "<group>"; };
 		CC65E18022D3326900CEB2D2 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		CC6B1ED622D87C8D00444D48 /* chillerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chillerOne.swift; sourceTree = "<group>"; };
 		CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				CC5D8DB122C99ABC003793CE /* AppDelegate.swift */,
 				CC5D8DB322C99ABC003793CE /* ViewController.swift */,
 				CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */,
+				CC6B1ED622D87C8D00444D48 /* chillerOne.swift */,
 				CC65E17A22D3244E00CEB2D2 /* LineChartController2.swift */,
 				CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */,
 				CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */,
@@ -227,6 +230,7 @@
 				CC65E17F22D3314D00CEB2D2 /* LineChartController4.swift in Sources */,
 				CC8BFB9E22CDD62B00871EE7 /* LineChartController.swift in Sources */,
 				CC65E17B22D3244E00CEB2D2 /* LineChartController2.swift in Sources */,
+				CC6B1ED722D87C8D00444D48 /* chillerOne.swift in Sources */,
 				CC65E17D22D3304400CEB2D2 /* LineChartController3.swift in Sources */,
 				CC5D8DB222C99ABC003793CE /* AppDelegate.swift in Sources */,
 			);
