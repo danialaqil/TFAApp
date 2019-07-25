@@ -153,7 +153,6 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
         let item = NSManagedObject(entity: entity, insertInto: managedContext)
         item.setValue(itemName, forKey: "alarmAttributes")
         
-        
         do {
             try managedContext.save()
             tableView.reloadData()
