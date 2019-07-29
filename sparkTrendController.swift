@@ -9,51 +9,55 @@ import UIKit
 import Charts
 
 class sparkTrendController: UIViewController {
+        
+    @IBOutlet weak var lineChart1: LineChartView!
     
-
-    @IBOutlet weak var chiller1TrendSpark: LineChartView!
-    @IBOutlet weak var chiller2TrendSpark: LineChartView!
-    @IBOutlet weak var chiller3TrendSpark: LineChartView!
-    @IBOutlet weak var chiller4TrendSpark: LineChartView!
+    @IBOutlet weak var lineChart2: LineChartView!
     
-    var numberOfSparksChiller1: [Double] = [5,8,6,4,2,1,2,1,1,0]
+    @IBOutlet weak var LineChart3: LineChartView!
     
-    var numberOfSparksChiller2: [Double] = [10,13,8,7,8,7,5,4,2,1]
+    @IBOutlet weak var LineChart4: LineChartView!
+        
     
-    var numberOfSparksChiller3: [Double] = [15,13,8,2,2,7,5,5,6,1]
+    let numberOfSparksChiller1: [Double] = [5,8,6,4,2,1,2,1,1,0]
     
-    var numberOfSparksChiller4: [Double] = [12,3,5,7,3,7,5,4,7,1]
+    let numberOfSparksChiller2: [Double] = [10,13,8,7,8,7,5,4,2,1]
     
-    var daysNumbered: [Double] = [1,2,3,4,5,6,7,8,9,10]
+    let numberOfSparksChiller3: [Double] = [15,13,8,2,2,7,5,5,6,1]
     
+    let numberOfSparksChiller4: [Double] = [12,3,5,7,3,7,5,4,7,1]
+    
+    let daysNumbered: [Double] = [1,2,3,4,5,6,7,8,9,10]
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = "Trends of Sparks"
         
-        customizeChart(dataPoints: numberOfSparksChiller1, values: daysNumbered, lineChartView: chiller1TrendSpark, label: "Chiller 1 Sparks")
-        customizeChart(dataPoints: numberOfSparksChiller2, values: daysNumbered, lineChartView: chiller2TrendSpark, label: "Chiller 2 Sparks")
-        customizeChart(dataPoints: numberOfSparksChiller3, values: daysNumbered, lineChartView: chiller3TrendSpark, label: "Chiller 3 Sparks")
-        customizeChart(dataPoints: numberOfSparksChiller4, values: daysNumbered, lineChartView: chiller4TrendSpark, label: "Chiller 4 Sparks")
-
-    }
+        customiseChart(datapoints: numberOfSparksChiller1, values: daysNumbered, lineChartView: lineChart1, label: "Chiller 1")
+        
+        customiseChart(datapoints: numberOfSparksChiller2, values: daysNumbered, lineChartView: lineChart2, label: "Chiller 2")
+        
+        customiseChart(datapoints: numberOfSparksChiller3, values: daysNumbered, lineChartView: LineChart3, label: "Chiller 3")
+        
+        customiseChart(datapoints: numberOfSparksChiller4, values: daysNumbered, lineChartView: LineChart4, label: "Chiller 4")
     
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
     
-    func customizeChart (dataPoints: [Double
-        ], values: [Double], lineChartView: LineChartView, label: String) {
+    func customiseChart (datapoints: [Double], values: [Double], lineChartView: LineChartView, label: String) {
         
         //1) set ChartDataEntry
+        
         var dataEntries: [ChartDataEntry] = []
-        for i in 0..<dataPoints.count {
-            let entries = ChartDataEntry(x: values[i], y: dataPoints[i])
-            //let dataEntry = LineChartDataSet(entries: entries, label: label)
+        for i in 0..<datapoints.count {
+            let entries = ChartDataEntry(x: values[i], y: datapoints[i])
             dataEntries.append(entries)
         }
-        //2) set ChartDataSet
+        
+        //2) set ChartDatSet
         let chartDataSet = LineChartDataSet(entries: dataEntries, label: label)
         
         //3) set ChartData
@@ -61,8 +65,5 @@ class sparkTrendController: UIViewController {
         
         //4) assign it to chart's data
         lineChartView.data = lineChartData
-        
     }
-    
-    
 }

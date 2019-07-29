@@ -455,7 +455,7 @@
         <!--Spark Trend Controller-->
         <scene sceneID="G4N-xM-kVe">
             <objects>
-                <viewController id="KRi-Nk-mMx" customClass="sparkTrendController" sceneMemberID="viewController">
+                <viewController id="KRi-Nk-mMx" customClass="sparkTrendController" customModule="AlarmChartsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wS-ul-lSf">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="2800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -466,78 +466,91 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILX-ay-shL" userLabel="trendContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="2689"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 1:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcF-Hz-RC3">
-                                                <rect key="frame" x="72" y="39" width="880" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 1:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL1-bk-MWL">
+                                                <rect key="frame" x="52" y="60" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="8UB-5J-fm2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RA5-hR-flG" customClass="LineChartView" customModule="Charts">
-                                                <rect key="frame" x="72" y="98" width="880" height="549"/>
-                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVL-L2-SGz" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="123.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 2:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aW-RQ-4mX">
-                                                <rect key="frame" x="72" y="698" width="880" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-Ns-jjf" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="787.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 3:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWP-QJ-dOd">
+                                                <rect key="frame" x="52" y="1380" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="dTh-Tu-9lm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-ck-cZ3" customClass="LineChartView" customModule="Charts">
-                                                <rect key="frame" x="72" y="748" width="880" height="549"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gze-3C-JAX" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="1443.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 3:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-at-A4b">
-                                                <rect key="frame" x="72" y="1338" width="880" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 4:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCz-Is-6Zt">
+                                                <rect key="frame" x="52" y="2012" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="F4q-sK-SaA"/>
+                                                    <constraint firstAttribute="height" constant="46" id="drG-Uw-HjL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sV4-wd-nsC" customClass="LineChartView" customModule="Charts">
-                                                <rect key="frame" x="72" y="1388" width="880" height="549"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMv-fk-sCm" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="2075.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 4:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzX-Tw-1Fr">
-                                                <rect key="frame" x="72" y="2011" width="880" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 2:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9r-BL-6J1">
+                                                <rect key="frame" x="52" y="724" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="svG-xi-CYE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewJ-2p-EeQ" customClass="LineChartView" customModule="Charts">
-                                                <rect key="frame" x="72" y="2061" width="880" height="549"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="4aW-RQ-4mX" firstAttribute="trailing" secondItem="q2p-ck-cZ3" secondAttribute="trailing" id="3RJ-uD-GRx"/>
-                                            <constraint firstItem="ewJ-2p-EeQ" firstAttribute="top" secondItem="bzX-Tw-1Fr" secondAttribute="bottom" constant="8" symbolic="YES" id="3qq-8i-F5U"/>
-                                            <constraint firstItem="bzX-Tw-1Fr" firstAttribute="top" secondItem="sV4-wd-nsC" secondAttribute="bottom" constant="74" id="6CV-ig-5BX"/>
-                                            <constraint firstItem="IcF-Hz-RC3" firstAttribute="trailing" secondItem="RA5-hR-flG" secondAttribute="trailing" id="8en-dV-EDz"/>
-                                            <constraint firstItem="bzX-Tw-1Fr" firstAttribute="leading" secondItem="ewJ-2p-EeQ" secondAttribute="leading" id="Cmr-J3-Ibs"/>
-                                            <constraint firstItem="4aW-RQ-4mX" firstAttribute="top" secondItem="ILX-ay-shL" secondAttribute="top" constant="698" id="F0Z-Oe-PyB"/>
-                                            <constraint firstItem="q2p-ck-cZ3" firstAttribute="leading" secondItem="3rq-at-A4b" secondAttribute="leading" id="HcQ-Ll-YKa"/>
-                                            <constraint firstItem="3rq-at-A4b" firstAttribute="trailing" secondItem="sV4-wd-nsC" secondAttribute="trailing" id="IeC-sw-8X1"/>
-                                            <constraint firstItem="RA5-hR-flG" firstAttribute="leading" secondItem="4aW-RQ-4mX" secondAttribute="leading" id="K11-IU-VOg"/>
-                                            <constraint firstItem="IcF-Hz-RC3" firstAttribute="top" secondItem="ILX-ay-shL" secondAttribute="top" constant="39" id="Kv8-Qw-SPA"/>
-                                            <constraint firstItem="sV4-wd-nsC" firstAttribute="top" secondItem="3rq-at-A4b" secondAttribute="bottom" constant="8" symbolic="YES" id="Ose-Hd-nsn"/>
-                                            <constraint firstItem="sV4-wd-nsC" firstAttribute="trailing" secondItem="bzX-Tw-1Fr" secondAttribute="trailing" id="UTz-Ar-Q0M"/>
-                                            <constraint firstItem="IcF-Hz-RC3" firstAttribute="leading" secondItem="ILX-ay-shL" secondAttribute="leading" constant="72" id="Ueg-mZ-ug7"/>
-                                            <constraint firstItem="3rq-at-A4b" firstAttribute="top" secondItem="q2p-ck-cZ3" secondAttribute="bottom" constant="41" id="UyS-LJ-C8c"/>
-                                            <constraint firstItem="bzX-Tw-1Fr" firstAttribute="trailing" secondItem="ewJ-2p-EeQ" secondAttribute="trailing" id="VgB-ZG-IiB"/>
-                                            <constraint firstItem="sV4-wd-nsC" firstAttribute="leading" secondItem="bzX-Tw-1Fr" secondAttribute="leading" id="VhM-sg-eBw"/>
-                                            <constraint firstAttribute="bottom" secondItem="ewJ-2p-EeQ" secondAttribute="bottom" constant="79" id="YE1-GS-y7c"/>
-                                            <constraint firstItem="q2p-ck-cZ3" firstAttribute="trailing" secondItem="3rq-at-A4b" secondAttribute="trailing" id="anm-pk-AFc"/>
-                                            <constraint firstItem="3rq-at-A4b" firstAttribute="leading" secondItem="sV4-wd-nsC" secondAttribute="leading" id="awc-Q9-KCr"/>
-                                            <constraint firstItem="RA5-hR-flG" firstAttribute="trailing" secondItem="4aW-RQ-4mX" secondAttribute="trailing" id="b01-X9-b4J"/>
-                                            <constraint firstItem="ewJ-2p-EeQ" firstAttribute="top" secondItem="ILX-ay-shL" secondAttribute="top" constant="2061" id="bzB-MZ-9G1"/>
-                                            <constraint firstItem="4aW-RQ-4mX" firstAttribute="top" secondItem="RA5-hR-flG" secondAttribute="bottom" constant="51" id="dcd-7m-gWP"/>
+                                            <constraint firstItem="OMv-fk-sCm" firstAttribute="width" secondItem="JL1-bk-MWL" secondAttribute="width" id="0M4-B1-xXo"/>
+                                            <constraint firstItem="SWP-QJ-dOd" firstAttribute="width" secondItem="JL1-bk-MWL" secondAttribute="width" id="2Fi-Lw-g8n"/>
+                                            <constraint firstItem="SWP-QJ-dOd" firstAttribute="top" secondItem="kJ8-Ns-jjf" secondAttribute="bottom" constant="166" id="36k-wt-AK3"/>
+                                            <constraint firstItem="MCz-Is-6Zt" firstAttribute="width" secondItem="JL1-bk-MWL" secondAttribute="width" id="38X-1e-x6L"/>
+                                            <constraint firstItem="kJ8-Ns-jjf" firstAttribute="width" secondItem="JL1-bk-MWL" secondAttribute="width" id="4pz-HG-IrE"/>
+                                            <constraint firstItem="v9r-BL-6J1" firstAttribute="centerX" secondItem="bVL-L2-SGz" secondAttribute="centerX" id="7fT-UW-j9p"/>
+                                            <constraint firstItem="Gze-3C-JAX" firstAttribute="firstBaseline" secondItem="SWP-QJ-dOd" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="8vY-s8-t9v"/>
+                                            <constraint firstItem="kJ8-Ns-jjf" firstAttribute="centerX" secondItem="v9r-BL-6J1" secondAttribute="centerX" id="Aas-UB-vpK"/>
+                                            <constraint firstItem="JL1-bk-MWL" firstAttribute="top" secondItem="ILX-ay-shL" secondAttribute="top" constant="60" id="C1G-8c-yaW"/>
+                                            <constraint firstItem="bVL-L2-SGz" firstAttribute="width" secondItem="JL1-bk-MWL" secondAttribute="width" id="Crq-po-kLH"/>
+                                            <constraint firstItem="Gze-3C-JAX" firstAttribute="centerX" secondItem="SWP-QJ-dOd" secondAttribute="centerX" id="IJc-XY-82M"/>
+                                            <constraint firstItem="v9r-BL-6J1" firstAttribute="top" secondItem="bVL-L2-SGz" secondAttribute="bottom" constant="174" id="KWx-f8-yi8"/>
+                                            <constraint firstAttribute="bottom" secondItem="OMv-fk-sCm" secondAttribute="bottom" constant="187" id="M4b-Ad-fyT"/>
+                                            <constraint firstItem="MCz-Is-6Zt" firstAttribute="top" secondItem="Gze-3C-JAX" secondAttribute="bottom" constant="142" id="MQF-Jt-GnP"/>
+                                            <constraint firstItem="Gze-3C-JAX" firstAttribute="width" secondItem="JL1-bk-MWL" secondAttribute="width" id="Nwh-vj-qbC"/>
+                                            <constraint firstItem="OMv-fk-sCm" firstAttribute="firstBaseline" secondItem="MCz-Is-6Zt" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="OnO-dE-Qh2"/>
+                                            <constraint firstItem="SWP-QJ-dOd" firstAttribute="centerX" secondItem="kJ8-Ns-jjf" secondAttribute="centerX" id="Xis-xu-aaK"/>
+                                            <constraint firstItem="bVL-L2-SGz" firstAttribute="firstBaseline" secondItem="JL1-bk-MWL" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="cSO-4X-1bJ"/>
+                                            <constraint firstItem="bVL-L2-SGz" firstAttribute="centerX" secondItem="JL1-bk-MWL" secondAttribute="centerX" id="cbg-Ri-6oM"/>
+                                            <constraint firstItem="kJ8-Ns-jjf" firstAttribute="firstBaseline" secondItem="v9r-BL-6J1" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="d73-Rw-RwL"/>
+                                            <constraint firstItem="OMv-fk-sCm" firstAttribute="height" secondItem="bVL-L2-SGz" secondAttribute="height" id="ehx-DX-UGC"/>
                                             <constraint firstAttribute="height" constant="2689" id="erI-Wx-DNv"/>
-                                            <constraint firstItem="3rq-at-A4b" firstAttribute="top" secondItem="ILX-ay-shL" secondAttribute="top" constant="1338" id="jGI-2T-muY"/>
-                                            <constraint firstItem="RA5-hR-flG" firstAttribute="top" secondItem="IcF-Hz-RC3" secondAttribute="bottom" constant="17" id="k9F-rx-adh"/>
-                                            <constraint firstItem="4aW-RQ-4mX" firstAttribute="leading" secondItem="q2p-ck-cZ3" secondAttribute="leading" id="tM0-xg-H2F"/>
-                                            <constraint firstItem="IcF-Hz-RC3" firstAttribute="leading" secondItem="RA5-hR-flG" secondAttribute="leading" id="umj-i4-VeD"/>
-                                            <constraint firstItem="q2p-ck-cZ3" firstAttribute="top" secondItem="4aW-RQ-4mX" secondAttribute="bottom" constant="8" symbolic="YES" id="vmy-e9-3IL"/>
-                                            <constraint firstItem="IcF-Hz-RC3" firstAttribute="centerX" secondItem="ILX-ay-shL" secondAttribute="centerX" id="wj1-x6-8wG"/>
+                                            <constraint firstItem="MCz-Is-6Zt" firstAttribute="centerX" secondItem="Gze-3C-JAX" secondAttribute="centerX" id="mAM-Qg-ICs"/>
+                                            <constraint firstItem="OMv-fk-sCm" firstAttribute="centerX" secondItem="MCz-Is-6Zt" secondAttribute="centerX" id="pzl-0y-g3P"/>
+                                            <constraint firstItem="JL1-bk-MWL" firstAttribute="leading" secondItem="ILX-ay-shL" secondAttribute="leading" constant="52" id="qlJ-D6-NwM"/>
+                                            <constraint firstItem="Gze-3C-JAX" firstAttribute="height" secondItem="bVL-L2-SGz" secondAttribute="height" id="r4Z-Ix-DG5"/>
+                                            <constraint firstItem="v9r-BL-6J1" firstAttribute="width" secondItem="JL1-bk-MWL" secondAttribute="width" id="rtu-XH-Ors"/>
+                                            <constraint firstItem="Gze-3C-JAX" firstAttribute="centerX" secondItem="ILX-ay-shL" secondAttribute="centerX" id="vOH-LM-dR3"/>
+                                            <constraint firstItem="kJ8-Ns-jjf" firstAttribute="height" secondItem="bVL-L2-SGz" secondAttribute="height" id="veL-oK-7y3"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -562,10 +575,10 @@
                     <navigationItem key="navigationItem" id="hpF-0s-xcE"/>
                     <size key="freeformSize" width="1024" height="2800"/>
                     <connections>
-                        <outlet property="chiller1TrendSpark" destination="RA5-hR-flG" id="9x1-uO-OAa"/>
-                        <outlet property="chiller2TrendSpark" destination="q2p-ck-cZ3" id="p0Q-56-Lmd"/>
-                        <outlet property="chiller3TrendSpark" destination="sV4-wd-nsC" id="4jn-zI-d6r"/>
-                        <outlet property="chiller4TrendSpark" destination="ewJ-2p-EeQ" id="RLq-PG-Lco"/>
+                        <outlet property="LineChart3" destination="Gze-3C-JAX" id="bO7-lW-0f8"/>
+                        <outlet property="LineChart4" destination="OMv-fk-sCm" id="RuD-UO-FR6"/>
+                        <outlet property="lineChart1" destination="bVL-L2-SGz" id="FGA-mj-AXb"/>
+                        <outlet property="lineChart2" destination="kJ8-Ns-jjf" id="IPe-F2-NCU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M0F-so-4M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
