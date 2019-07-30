@@ -106,37 +106,195 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6U-hd-hBc" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="70" width="1024" height="622"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q5Q-1w-PIg">
-                                <rect key="frame" x="0.0" y="694" width="1024" height="622"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgq-3R-KUD">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="1246"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="157-ax-zZ6">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="6430"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select Charts" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HI4-pt-2cm" customClass="DropDown" customModule="iOSDropDown">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-wj-g9w" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="30" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="Ydw-hP-he7"/>
+                                                    <constraint firstAttribute="height" constant="400" id="h1D-zM-tvh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-4e-Wtu" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="430" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="UUU-vV-CNL"/>
+                                                    <constraint firstAttribute="height" constant="400" id="zhM-lQ-X7Z"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lz-XL-mY9" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="830" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="8Fd-xL-WsX"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="t11-Yf-mLU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oo5-us-FnS" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="1230" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="Bxy-Vn-uJh"/>
+                                                    <constraint firstAttribute="height" constant="400" id="eSt-HM-aEW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlp-S4-r5r" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="1630" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="Izn-0G-8zd"/>
+                                                    <constraint firstAttribute="height" constant="400" id="kWi-vy-Ztk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-ey-Qu0" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="2030" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="Mc2-2y-op2"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="Y99-ri-qUJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECF-Io-Iy6" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="2430" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="dEU-wu-nRA"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="dKJ-Ib-p7w"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="766-tB-jZW" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="2830" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="WtW-Dr-cdy"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="zYo-L1-rKc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSg-cc-N4L" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="3230" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="WMs-y6-hvB"/>
+                                                    <constraint firstAttribute="height" constant="400" id="mIl-iu-Kv3"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sn-Mo-EMO" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="3630" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="dIY-Wd-hFH"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="qXo-g1-NAV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TM-XC-3Wc" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="4030" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="XRs-Ki-8cY"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="gXY-b5-wKi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27C-9C-Ffu" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="4430" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="6ug-2f-jRh"/>
+                                                    <constraint firstAttribute="height" constant="400" id="NRw-bj-4yo"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZp-02-kmL" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="4830" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="jdz-e9-LJv"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="sRY-Lg-mS0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-yx-FAI" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="5230" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="BH3-3y-9zM"/>
+                                                    <constraint firstAttribute="height" constant="400" id="rvK-j9-rpK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKx-Ku-CMI" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="5630" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="HYS-GQ-JqL"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="KeX-Bk-GBm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2E-5L-Ksg" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="6030" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="ZiG-e1-uaK"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="mQl-PH-oBx"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="157-ax-zZ6" firstAttribute="leading" secondItem="dgq-3R-KUD" secondAttribute="leading" id="KqU-C3-ngU"/>
+                                    <constraint firstItem="157-ax-zZ6" firstAttribute="width" secondItem="dgq-3R-KUD" secondAttribute="width" id="Ot8-nL-QVd"/>
+                                    <constraint firstAttribute="trailing" secondItem="157-ax-zZ6" secondAttribute="trailing" id="hnL-U2-B9g"/>
+                                    <constraint firstItem="157-ax-zZ6" firstAttribute="top" secondItem="dgq-3R-KUD" secondAttribute="top" id="sol-iz-2dc"/>
+                                    <constraint firstAttribute="bottom" secondItem="157-ax-zZ6" secondAttribute="bottom" id="ucy-qB-ldH"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="q5Q-1w-PIg" firstAttribute="top" secondItem="k6U-hd-hBc" secondAttribute="bottom" constant="2" id="8gY-qG-sUm"/>
-                            <constraint firstItem="k6U-hd-hBc" firstAttribute="leading" secondItem="q5Q-1w-PIg" secondAttribute="leading" id="Lzg-dO-lKt"/>
-                            <constraint firstAttribute="trailing" secondItem="k6U-hd-hBc" secondAttribute="trailing" id="Nk7-57-HS5"/>
-                            <constraint firstItem="OI2-Jh-KcX" firstAttribute="bottom" secondItem="q5Q-1w-PIg" secondAttribute="bottom" id="NzU-zl-2y1"/>
-                            <constraint firstItem="k6U-hd-hBc" firstAttribute="leading" secondItem="jFp-Ot-OMo" secondAttribute="leading" id="btS-fa-9y0"/>
-                            <constraint firstItem="k6U-hd-hBc" firstAttribute="top" secondItem="OI2-Jh-KcX" secondAttribute="top" id="ghN-Et-GDT"/>
-                            <constraint firstItem="k6U-hd-hBc" firstAttribute="trailing" secondItem="q5Q-1w-PIg" secondAttribute="trailing" id="r07-Kq-mNa"/>
-                            <constraint firstAttribute="bottom" secondItem="k6U-hd-hBc" secondAttribute="bottom" constant="674" id="yaf-pL-VHe"/>
+                            <constraint firstItem="dgq-3R-KUD" firstAttribute="top" secondItem="OI2-Jh-KcX" secondAttribute="top" id="OZ2-tC-78A"/>
+                            <constraint firstItem="OI2-Jh-KcX" firstAttribute="bottom" secondItem="dgq-3R-KUD" secondAttribute="bottom" id="Txm-ck-aVf"/>
+                            <constraint firstItem="dgq-3R-KUD" firstAttribute="height" secondItem="OI2-Jh-KcX" secondAttribute="height" id="Wf3-i7-evv"/>
+                            <constraint firstItem="dgq-3R-KUD" firstAttribute="top" secondItem="OI2-Jh-KcX" secondAttribute="top" id="hQl-YT-gE6"/>
+                            <constraint firstItem="dgq-3R-KUD" firstAttribute="leading" secondItem="OI2-Jh-KcX" secondAttribute="leading" id="hsr-X7-CUe"/>
+                            <constraint firstItem="OI2-Jh-KcX" firstAttribute="trailing" secondItem="dgq-3R-KUD" secondAttribute="trailing" id="jDb-Cd-LQO"/>
+                            <constraint firstItem="OI2-Jh-KcX" firstAttribute="bottom" secondItem="dgq-3R-KUD" secondAttribute="bottom" id="oZQ-S4-gog"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OI2-Jh-KcX"/>
                     </view>
                     <navigationItem key="navigationItem" id="3cs-AN-W9M"/>
                     <connections>
-                        <outlet property="lineChart" destination="k6U-hd-hBc" id="TNK-r7-QR7"/>
+                        <outlet property="lineChart1" destination="lgc-wj-g9w" id="Oxv-3E-9AL"/>
+                        <outlet property="lineChart10" destination="5sn-Mo-EMO" id="SaM-ou-HZ7"/>
+                        <outlet property="lineChart11" destination="2TM-XC-3Wc" id="x36-ex-1Oq"/>
+                        <outlet property="lineChart12" destination="27C-9C-Ffu" id="yOh-1L-Pyu"/>
+                        <outlet property="lineChart13" destination="DZp-02-kmL" id="Kc0-bZ-BeS"/>
+                        <outlet property="lineChart14" destination="mgC-yx-FAI" id="LHn-dC-eGt"/>
+                        <outlet property="lineChart15" destination="EKx-Ku-CMI" id="DqX-hX-T3K"/>
+                        <outlet property="lineChart16" destination="v2E-5L-Ksg" id="qeV-9q-70g"/>
+                        <outlet property="lineChart2" destination="5pa-4e-Wtu" id="XAe-Tb-3Y4"/>
+                        <outlet property="lineChart3" destination="6lz-XL-mY9" id="8KN-rX-3F1"/>
+                        <outlet property="lineChart4" destination="oo5-us-FnS" id="LN2-Sl-6BN"/>
+                        <outlet property="lineChart5" destination="xlp-S4-r5r" id="iK4-O0-oxN"/>
+                        <outlet property="lineChart6" destination="ZXp-ey-Qu0" id="cLO-Zg-wnz"/>
+                        <outlet property="lineChart7" destination="ECF-Io-Iy6" id="YPQ-Mg-P1y"/>
+                        <outlet property="lineChart8" destination="766-tB-jZW" id="IVg-ch-aSx"/>
+                        <outlet property="lineChart9" destination="FSg-cc-N4L" id="B04-nd-x8x"/>
+                        <outlet property="lineChartSelector" destination="HI4-pt-2cm" id="2bK-vm-QM4"/>
                         <segue destination="yW9-lT-sg6" kind="show" id="TEn-Bh-HbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzM-B9-001" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2242" y="737"/>
+            <point key="canvasLocation" x="2241.796875" y="736.60322108345531"/>
         </scene>
         <!--Chiller One-->
         <scene sceneID="v5S-F3-I4y">
