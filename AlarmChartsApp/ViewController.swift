@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     let sparkNumbersChiller1 = [3,7,5,7,3]
     let sparkNumbersChiller2 = [5,4,7,4,6]
     let sparkNumbersChiller3 = [2,5,7,5,2]
-    let sparkNumbersChiller4 = [3,6,9,3,7]
+    //let sparkNumbersChiller4 = [3,6,9,3,7]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller1.map{ Double($0) }, pieChartView: chillerOne, label: "Chiller 1")
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller2.map{ Double($0) }, pieChartView: chillerTwo, label: "Chiller 2")
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller3.map{ Double($0) }, pieChartView: chillerThree, label: "Chiller 3")
-        customizeChart(dataPoints: sparkType, values: sparkNumbersChiller4.map{ Double($0) }, pieChartView: chillerFour, label: "Chiller 4")
+        //customizeChart(dataPoints: sparkType, values: sparkNumbersChiller4.map{ Double($0) }, pieChartView: chillerFour, label: "Chiller 4")
     }
     func customizeChart (dataPoints: [String
         ], values: [Double], pieChartView: PieChartView, label: String) {

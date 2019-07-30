@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFz-rb-pSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2241.796875" y="1402.9282576866763"/>
+            <point key="canvasLocation" x="2978" y="1403"/>
         </scene>
         <!--Line Chart Controller3-->
         <scene sceneID="zdF-09-uSD">
@@ -415,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1J-8u-f9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2241.796875" y="2776.8667642752562"/>
+            <point key="canvasLocation" x="2978" y="2777"/>
         </scene>
         <!--Chiller 4-->
         <scene sceneID="k1v-yF-ryQ">
