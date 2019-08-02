@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EC0C0151A0586C6CFB27F09 /* Pods_AlarmChartsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337FBA223CF1EC8E93950F99 /* Pods_AlarmChartsApp.framework */; };
+		CC5854CC22F3DA1F0095663C /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5854CB22F3DA1F0095663C /* NetworkingClient.swift */; };
 		CC5D8DB222C99ABC003793CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D8DB122C99ABC003793CE /* AppDelegate.swift */; };
 		CC5D8DB422C99ABC003793CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D8DB322C99ABC003793CE /* ViewController.swift */; };
 		CC5D8DB722C99ABC003793CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DB522C99ABC003793CE /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		1417C0AE1ADC40EC5806DE2C /* Pods-AlarmChartsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmChartsApp.debug.xcconfig"; path = "Target Support Files/Pods-AlarmChartsApp/Pods-AlarmChartsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		337FBA223CF1EC8E93950F99 /* Pods_AlarmChartsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlarmChartsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		742E07C93F5F22EC2AEEC9A9 /* Pods-AlarmChartsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmChartsApp.release.xcconfig"; path = "Target Support Files/Pods-AlarmChartsApp/Pods-AlarmChartsApp.release.xcconfig"; sourceTree = "<group>"; };
+		CC5854CB22F3DA1F0095663C /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkingClient.swift; path = /Users/danialaqil/Desktop/AlarmChartsApp/AlarmChartsApp/NetworkingClient.swift; sourceTree = "<absolute>"; };
 		CC5D8DAE22C99ABC003793CE /* AlarmChartsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmChartsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5D8DB122C99ABC003793CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC5D8DB322C99ABC003793CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				CC5D8DBD22C99ABF003793CE /* LaunchScreen.storyboard */,
 				CC5D8DC022C99ABF003793CE /* Info.plist */,
 				CC5D8DB822C99ABC003793CE /* AlarmChartsApp.xcdatamodeld */,
+				CC5854CB22F3DA1F0095663C /* NetworkingClient.swift */,
 			);
 			path = AlarmChartsApp;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				CC81DC6622E83F3E00831ABE /* sparkTrendController.swift in Sources */,
 				CC65E17B22D3244E00CEB2D2 /* LineChartController2.swift in Sources */,
 				CC6B1ED722D87C8D00444D48 /* chillerOne.swift in Sources */,
+				CC5854CC22F3DA1F0095663C /* NetworkingClient.swift in Sources */,
 				CC65E17D22D3304400CEB2D2 /* LineChartController3.swift in Sources */,
 				CC5D8DB222C99ABC003793CE /* AppDelegate.swift in Sources */,
 			);
