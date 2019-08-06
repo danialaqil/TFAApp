@@ -8,8 +8,12 @@
 
 import UIKit
 import Charts
+import Alamofire
 
 class LineChartController: UIViewController {
+    
+    //    https://api.coindesk.com/v1/bpi/currentprice.json
+
     
     let numberOfSparksGraph1: [Double] = [5,8,6,4,2,1,2,1,1,0]
     
@@ -134,6 +138,7 @@ class LineChartController: UIViewController {
         customiseChart(datapoints: numberOfSparksGraph14, values: daysNumbered, lineChartView: lineChart14, label: "Graph 14")
         customiseChart(datapoints: numberOfSparksGraph15, values: daysNumbered, lineChartView: lineChart15, label: "Graph 15")
         customiseChart(datapoints: numberOfSparksGraph16, values: daysNumbered, lineChartView: lineChart16, label: "Graph 16")
+    
     }
    
     

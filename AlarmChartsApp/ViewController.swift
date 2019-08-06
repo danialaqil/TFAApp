@@ -8,8 +8,12 @@
 
 import UIKit
 import Charts
+import Alamofire
 
 class ViewController: UIViewController {
+    
+    // 'fake data'    https://api.coindesk.com/v1/bpi/currentprice.json
+
 
     @IBOutlet weak var chillerOne: PieChartView!
     
@@ -34,6 +38,28 @@ class ViewController: UIViewController {
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller2.map{ Double($0) }, pieChartView: chillerTwo, label: "Chiller 2")
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller3.map{ Double($0) }, pieChartView: chillerThree, label: "Chiller 3")
         //customizeChart(dataPoints: sparkType, values: sparkNumbersChiller4.map{ Double($0) }, pieChartView: chillerFour, label: "Chiller 4")
+        
+        
+        //http request using Alamofire
+        Alamofire.request("https://api.coindesk.com/v1/bpi/currentprice.json").responseJSON{ response in
+            //print(response)
+            
+            if let bitcoinJSON = response.result.value {
+                let bitcoinObject:Dictionary = bitcoinJSON as! Dictionary<String, Any>
+                //print(bitcoinObject)
+                let bpiObject:Dictionary = bitcoinObject["bpi"] as! Dictionary<String, Any>
+                let usdObject:Dictionary =  bpiObject["USD"] as! Dictionary<String, Any>
+                let rate: Float = Float(usdObject["rate_float"] as! NSNumber)
+                
+                print("test")
+                print("$\(rate)")
+                
+            }
+            
+        }
+            
+     
+        
     }
     func customizeChart (dataPoints: [String
         ], values: [Double], pieChartView: PieChartView, label: String) {
