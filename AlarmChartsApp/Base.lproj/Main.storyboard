@@ -112,202 +112,202 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="157-ax-zZ6">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="6462"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="A11-RS-V3u">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="A11-RS-V3u">
                                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-EK-pAs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tk-cA-gVB">
-                                                        <rect key="frame" x="68.5" y="0.0" width="58.5" height="31"/>
+                                                        <rect key="frame" x="56" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph1Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="kyX-e1-wBi"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-Df-QxJ">
-                                                        <rect key="frame" x="125" y="0.0" width="71.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="120" y="0.0" width="42" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiH-8m-yzF">
-                                                        <rect key="frame" x="196.5" y="0.0" width="58.5" height="31"/>
+                                                        <rect key="frame" x="177.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph2Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="oxG-YK-q7C"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4k-xf-KqD">
-                                                        <rect key="frame" x="253" y="0.0" width="72" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="242" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-LK-HLm">
-                                                        <rect key="frame" x="325" y="0.0" width="58.5" height="31"/>
+                                                        <rect key="frame" x="299.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph3Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="06l-Cn-OQi"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KP-22-gs3">
-                                                        <rect key="frame" x="381.5" y="0.0" width="72.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="364" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aET-y0-4C9">
-                                                        <rect key="frame" x="454" y="0.0" width="59" height="31"/>
+                                                        <rect key="frame" x="422" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph4Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="LUU-rV-qK1"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyE-co-w3i" userLabel="Graph 5">
-                                                        <rect key="frame" x="511" y="0.0" width="71.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="486" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5JE-ks-FRV">
-                                                        <rect key="frame" x="582.5" y="0.0" width="59" height="31"/>
+                                                        <rect key="frame" x="544" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph5Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="U4j-5i-mgf"/>
                                                         </connections>
                                                     </switch>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmA-48-npK">
-                                                        <rect key="frame" x="639.5" y="0.0" width="71.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 6" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmA-48-npK">
+                                                        <rect key="frame" x="608.5" y="0.0" width="64" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dq2-7R-5tQ">
-                                                        <rect key="frame" x="711" y="0.0" width="59" height="31"/>
+                                                        <rect key="frame" x="687.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph6Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="yKu-LJ-z62"/>
                                                         </connections>
                                                     </switch>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7d-UE-K22">
-                                                        <rect key="frame" x="768" y="0.0" width="70.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 7" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7d-UE-K22">
+                                                        <rect key="frame" x="752" y="0.0" width="64" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hh3-yx-FoX">
-                                                        <rect key="frame" x="838.5" y="0.0" width="59" height="31"/>
+                                                        <rect key="frame" x="831.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph7DIsplay:" destination="9OJ-v2-GqC" eventType="valueChanged" id="owr-hp-Tow"/>
                                                         </connections>
                                                     </switch>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYb-a9-URT">
-                                                        <rect key="frame" x="895.5" y="0.0" width="71.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 8" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYb-a9-URT">
+                                                        <rect key="frame" x="895.5" y="0.0" width="64" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMg-Wd-4Cx">
-                                                        <rect key="frame" x="967" y="0.0" width="59" height="31"/>
+                                                        <rect key="frame" x="975" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph8Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="Ykn-zs-JS1"/>
                                                         </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="uwW-gi-ihh">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uwW-gi-ihh">
                                                 <rect key="frame" x="0.0" y="31" width="1024" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAo-3O-HKE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQF-Pd-EhQ">
-                                                        <rect key="frame" x="67.5" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="59.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph9DIsplay:" destination="9OJ-v2-GqC" eventType="valueChanged" id="pNu-vz-Lck"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDA-Gj-Pgu">
-                                                        <rect key="frame" x="121" y="0.0" width="76" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="126" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQG-zj-QVE">
-                                                        <rect key="frame" x="197" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="190.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph10Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="mQe-51-GuX"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D93-e7-3Ce">
-                                                        <rect key="frame" x="250.5" y="0.0" width="73" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="257" y="0.0" width="46" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUF-m9-mTp">
-                                                        <rect key="frame" x="323.5" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="320" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph11Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="PYp-tP-230"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qni-CL-x1e">
-                                                        <rect key="frame" x="377" y="0.0" width="75.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="386" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1b5-rS-QMe">
-                                                        <rect key="frame" x="452.5" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="451" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph12Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="KZr-m4-Tvw"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cw-tX-UCY">
-                                                        <rect key="frame" x="506" y="0.0" width="76" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="517" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzl-Mb-k2c">
-                                                        <rect key="frame" x="582" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="582" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph13Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="pBx-GH-iMg"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 14" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kng-vB-oU1">
-                                                        <rect key="frame" x="635.5" y="0.0" width="76.5" height="31"/>
-                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <rect key="frame" x="648" y="0.0" width="48" height="31"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqo-gS-7Sg">
-                                                        <rect key="frame" x="712" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="713" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph14Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="4ci-Ot-LAW"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBX-5Z-rDe">
-                                                        <rect key="frame" x="765.5" y="0.0" width="75.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="779.5" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psV-5O-j2T">
-                                                        <rect key="frame" x="841" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="844" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph15Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="sbO-li-BNc"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n69-1N-uZE">
-                                                        <rect key="frame" x="894.5" y="0.0" width="76" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="910.5" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMj-Aa-YMm">
-                                                        <rect key="frame" x="970.5" y="0.0" width="55.5" height="31"/>
+                                                        <rect key="frame" x="975" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="graph16Display:" destination="9OJ-v2-GqC" eventType="valueChanged" id="52t-0Y-21P"/>
                                                         </connections>
