@@ -16,56 +16,75 @@ class LineChartController: UIViewController {
 
     
     let numberOfSparksGraph1: [Double] = [5,8,6,4,2,1,2,1,1,0]
-    
     let numberOfSparksGraph2: [Double] = [10,13,8,7,8,7,5,4,2,1]
-    
     let numberOfSparksGraph3: [Double] = [15,13,8,2,2,7,5,5,6,1]
-    
     let numberOfSparksGraph4: [Double] = [12,3,5,7,3,7,5,4,7,1]
-    
     let numberOfSparksGraph5: [Double] = [5,8,6,4,2,1,2,1,1,0]
-    
     let numberOfSparksGraph6: [Double] = [10,13,8,7,8,7,5,4,2,1]
-    
     let numberOfSparksGraph7: [Double] = [15,13,8,2,2,7,5,5,6,1]
-    
     let numberOfSparksGraph8: [Double] = [12,3,5,7,3,7,5,4,7,1]
-    
     let numberOfSparksGraph9: [Double] = [5,8,6,4,2,1,2,1,1,0]
-    
     let numberOfSparksGraph10: [Double] = [10,13,8,7,8,7,5,4,2,1]
-    
     let numberOfSparksGraph11: [Double] = [15,13,8,2,2,7,5,5,6,1]
-    
     let numberOfSparksGraph12: [Double] = [12,3,5,7,3,7,5,4,7,1]
-    
     let numberOfSparksGraph13: [Double] = [5,8,6,4,2,1,2,1,1,0]
-    
     let numberOfSparksGraph14: [Double] = [10,13,8,7,8,7,5,4,2,1]
-    
     let numberOfSparksGraph15: [Double] = [15,13,8,2,2,7,5,5,6,1]
-    
     let numberOfSparksGraph16: [Double] = [12,3,5,7,3,7,5,4,7,1]
     
     let daysNumbered: [Double] = [1,2,3,4,5,6,7,8,9,10]
     
+    let xScatter1: [Double] = [1, 5, 6]
+    let yScatter1: [Double] = [5, 2, 1]
+    let xScatter2: [Double] = [4, 6, 8, 9, 10]
+    let yScatter2: [Double] = [7, 7, 5, 4, 1]
+    let xScatter3: [Double] = [4]
+    let yScatter3: [Double] = [2]
+    let xScatter4: [Double] = [1, 5, 6, 9]
+    let yScatter4: [Double] = [12, 3, 7, 7]
+    let xScatter5: [Double] = [5]
+    let yScatter5: [Double] = [2]
+    let xScatter6: [Double] = [3, 6, 9, 10]
+    let yScatter6: [Double] = [8, 7, 2, 1]
+    let xScatter7: [Double] = [1,2,3,4,5]
+    let yScatter7: [Double] = [15,13,8,2,2]
+    let xScatter8: [Double] = [1, 3, 5, 7, 9]
+    let yScatter8: [Double] = [12, 5, 3, 5, 7]
+    let xScatter9: [Double] = [1]
+    let yScatter9: [Double] = [5]
+    let xScatter10: [Double] = [3,4,5]
+    let yScatter10: [Double] = [8,7,8]
+    let xScatter11: [Double] = [7, 8, 10]
+    let yScatter11: [Double] = [5,5,1]
+    let xScatter12: [Double] = [1]
+    let yScatter12: [Double] = [12]
+    let xScatter13: [Double] = [1,2,3]
+    let yScatter13: [Double] = [5,8,6]
+    let xScatter14: [Double] = [1, 5, 9]
+    let yScatter14: [Double] = [10, 8, 2]
+    let xScatter15: [Double] = []
+    let yScatter15: [Double] = []
+    let xScatter16: [Double] = [9, 10]
+    let yScatter16: [Double] = [7, 1]
+
     
-    @IBOutlet weak var lineChart1: LineChartView!
-    @IBOutlet weak var lineChart2: LineChartView!
-    @IBOutlet weak var lineChart3: LineChartView!
-    @IBOutlet weak var lineChart4: LineChartView!
-    @IBOutlet weak var lineChart5: LineChartView!
-    @IBOutlet weak var lineChart6: LineChartView!
-    @IBOutlet weak var lineChart7: LineChartView!
-    @IBOutlet weak var lineChart8: LineChartView!
-    @IBOutlet weak var lineChart9: LineChartView!
-    @IBOutlet weak var lineChart10: LineChartView!
-    @IBOutlet weak var lineChart11: LineChartView!
-    @IBOutlet weak var lineChart12: LineChartView!
-    @IBOutlet weak var lineChart13: LineChartView!
-    @IBOutlet weak var lineChart14: LineChartView!
-    @IBOutlet weak var lineChart15: LineChartView!
-    @IBOutlet weak var lineChart16: LineChartView!
+    
+    @IBOutlet weak var lineChart1: CombinedChartView!
+    @IBOutlet weak var lineChart2: CombinedChartView!
+    @IBOutlet weak var lineChart3: CombinedChartView!
+    @IBOutlet weak var lineChart4: CombinedChartView!
+    @IBOutlet weak var lineChart5: CombinedChartView!
+    @IBOutlet weak var lineChart6: CombinedChartView!
+    @IBOutlet weak var lineChart7: CombinedChartView!
+    @IBOutlet weak var lineChart8: CombinedChartView!
+    @IBOutlet weak var lineChart9: CombinedChartView!
+    @IBOutlet weak var lineChart10: CombinedChartView!
+    @IBOutlet weak var lineChart11: CombinedChartView!
+    @IBOutlet weak var lineChart12: CombinedChartView!
+    @IBOutlet weak var lineChart13: CombinedChartView!
+    @IBOutlet weak var lineChart14: CombinedChartView!
+    @IBOutlet weak var lineChart15: CombinedChartView!
+    @IBOutlet weak var lineChart16: CombinedChartView!
     
     @IBOutlet weak var graph1Controller: UISwitch!
     @IBOutlet weak var graph2Controller: UISwitch!
@@ -122,22 +141,23 @@ class LineChartController: UIViewController {
         graph15Display(graph15Controller)
         graph16Display(graph16Controller)
         
-        customiseChart(datapoints: numberOfSparksGraph1, values: daysNumbered, lineChartView: lineChart1, label: "Graph 1")
-        customiseChart(datapoints: numberOfSparksGraph2, values: daysNumbered, lineChartView: lineChart2, label: "Graph 2")
-        customiseChart(datapoints: numberOfSparksGraph3, values: daysNumbered, lineChartView: lineChart3, label: "Graph 3")
-        customiseChart(datapoints: numberOfSparksGraph4, values: daysNumbered, lineChartView: lineChart4, label: "Graph 4")
-        customiseChart(datapoints: numberOfSparksGraph5, values: daysNumbered, lineChartView: lineChart5, label: "Graph 5")
-        customiseChart(datapoints: numberOfSparksGraph6, values: daysNumbered, lineChartView: lineChart6, label: "Graph 6")
-        customiseChart(datapoints: numberOfSparksGraph7, values: daysNumbered, lineChartView: lineChart7, label: "Graph 7")
-        customiseChart(datapoints: numberOfSparksGraph8, values: daysNumbered, lineChartView: lineChart8, label: "Graph 8")
-        customiseChart(datapoints: numberOfSparksGraph9, values: daysNumbered, lineChartView: lineChart9, label: "Graph 9")
-        customiseChart(datapoints: numberOfSparksGraph10, values: daysNumbered, lineChartView: lineChart10, label: "Graph 10")
-        customiseChart(datapoints: numberOfSparksGraph11, values: daysNumbered, lineChartView: lineChart11, label: "Graph 11")
-        customiseChart(datapoints: numberOfSparksGraph12, values: daysNumbered, lineChartView: lineChart12, label: "Graph 12")
-        customiseChart(datapoints: numberOfSparksGraph13, values: daysNumbered, lineChartView: lineChart13, label: "Graph 13")
-        customiseChart(datapoints: numberOfSparksGraph14, values: daysNumbered, lineChartView: lineChart14, label: "Graph 14")
-        customiseChart(datapoints: numberOfSparksGraph15, values: daysNumbered, lineChartView: lineChart15, label: "Graph 15")
-        customiseChart(datapoints: numberOfSparksGraph16, values: daysNumbered, lineChartView: lineChart16, label: "Graph 16")
+        customiseChart(yValuesLine: numberOfSparksGraph1, xValuesLine: daysNumbered, CombinedChartView: lineChart1, labelLine: "Line Chart 1", labelScatter: "Sparks", xScatterPoints: xScatter1, yScatterPoints: yScatter1)
+        customiseChart(yValuesLine: numberOfSparksGraph2, xValuesLine: daysNumbered, CombinedChartView: lineChart2, labelLine: "Line Chart 2", labelScatter: "Sparks", xScatterPoints: xScatter2, yScatterPoints: yScatter2)
+        customiseChart(yValuesLine: numberOfSparksGraph3, xValuesLine: daysNumbered, CombinedChartView: lineChart3, labelLine: "Line Chart 3", labelScatter: "Sparks", xScatterPoints: xScatter3, yScatterPoints: yScatter3)
+        customiseChart(yValuesLine: numberOfSparksGraph4, xValuesLine: daysNumbered, CombinedChartView: lineChart4, labelLine: "Line Chart 4", labelScatter: "Sparks", xScatterPoints: xScatter4, yScatterPoints: yScatter4)
+        customiseChart(yValuesLine: numberOfSparksGraph5, xValuesLine: daysNumbered, CombinedChartView: lineChart5, labelLine: "Line Chart 5", labelScatter: "Sparks", xScatterPoints: xScatter5, yScatterPoints: yScatter5)
+        customiseChart(yValuesLine: numberOfSparksGraph6, xValuesLine: daysNumbered, CombinedChartView: lineChart6, labelLine: "Line Chart 6", labelScatter: "Sparks", xScatterPoints: xScatter6, yScatterPoints: yScatter6)
+        customiseChart(yValuesLine: numberOfSparksGraph7, xValuesLine: daysNumbered, CombinedChartView: lineChart7, labelLine: "Line Chart 7", labelScatter: "Sparks", xScatterPoints: xScatter7, yScatterPoints: yScatter7)
+        customiseChart(yValuesLine: numberOfSparksGraph8, xValuesLine: daysNumbered, CombinedChartView: lineChart8, labelLine: "Line Chart 8", labelScatter: "Sparks", xScatterPoints: xScatter8, yScatterPoints: yScatter8)
+        customiseChart(yValuesLine: numberOfSparksGraph4, xValuesLine: daysNumbered, CombinedChartView: lineChart9, labelLine: "Line Chart 9", labelScatter: "Sparks", xScatterPoints: xScatter9, yScatterPoints: yScatter9)
+        customiseChart(yValuesLine: numberOfSparksGraph10, xValuesLine: daysNumbered, CombinedChartView: lineChart10, labelLine: "Line Chart 10", labelScatter: "Sparks", xScatterPoints: xScatter10, yScatterPoints: yScatter10)
+        customiseChart(yValuesLine: numberOfSparksGraph11, xValuesLine: daysNumbered, CombinedChartView: lineChart11, labelLine: "Line Chart 11", labelScatter: "Sparks", xScatterPoints: xScatter11, yScatterPoints: yScatter11)
+        customiseChart(yValuesLine: numberOfSparksGraph12, xValuesLine: daysNumbered, CombinedChartView: lineChart12, labelLine: "Line Chart 12", labelScatter: "Sparks", xScatterPoints: xScatter12, yScatterPoints: yScatter12)
+        customiseChart(yValuesLine: numberOfSparksGraph13, xValuesLine: daysNumbered, CombinedChartView: lineChart13, labelLine: "Line Chart 13", labelScatter: "Sparks", xScatterPoints: xScatter13, yScatterPoints: yScatter13)
+        customiseChart(yValuesLine: numberOfSparksGraph14, xValuesLine: daysNumbered, CombinedChartView: lineChart14, labelLine: "Line Chart 14", labelScatter: "Sparks", xScatterPoints: xScatter14, yScatterPoints: yScatter14)
+        customiseChart(yValuesLine: numberOfSparksGraph15, xValuesLine: daysNumbered, CombinedChartView: lineChart15, labelLine: "Line Chart 15", labelScatter: "Sparks", xScatterPoints: xScatter15, yScatterPoints: yScatter15)
+        customiseChart(yValuesLine: numberOfSparksGraph16, xValuesLine: daysNumbered, CombinedChartView: lineChart16, labelLine: "Line Chart 16", labelScatter: "Sparks", xScatterPoints: xScatter16, yScatterPoints: yScatter16)
+
     
     }
    
@@ -275,24 +295,44 @@ class LineChartController: UIViewController {
         }
     }
     
-    func customiseChart (datapoints: [Double], values: [Double], lineChartView: LineChartView, label: String) {
+    func customiseChart (yValuesLine: [Double], xValuesLine: [Double], CombinedChartView: CombinedChartView, labelLine: String, labelScatter: String, xScatterPoints: [Double], yScatterPoints: [Double]) {
         
         //1) set ChartDataEntry
         
-        var dataEntries: [ChartDataEntry] = []
-        for i in 0..<datapoints.count {
-            let entries = ChartDataEntry(x: values[i], y: datapoints[i])
-            dataEntries.append(entries)
+        var lineChartEntries: [ChartDataEntry] = []
+        for i in 0..<yValuesLine.count {
+            let entries = ChartDataEntry(x: xValuesLine[i], y: yValuesLine[i])
+            lineChartEntries.append(entries)
         }
         
-        //2) set ChartDatSet
-        let chartDataSet = LineChartDataSet(entries: dataEntries, label: label)
+        var scatterChartEntries: [ChartDataEntry] = []
+        for i in 0..<yScatterPoints.count {
+            let entries2 = ChartDataEntry(x: xScatterPoints[i], y: yScatterPoints[i])
+            scatterChartEntries.append(entries2)
+        }
         
-        //3) set ChartData
-        let lineChartData = LineChartData(dataSet: chartDataSet)
+        //2) set ChartDataSet
+        let chartDataSet = LineChartDataSet(entries: lineChartEntries, label: labelLine)
+        chartDataSet.colors = [NSUIColor.black]
+        let data = LineChartData()
+        data.addDataSet(chartDataSet)
+        
+        let scatterDataSet = ScatterChartDataSet(entries: scatterChartEntries, label: labelScatter)
+        scatterDataSet.colors = [NSUIColor.red]
+        let data2 = ScatterChartData()
+        data2.addDataSet(scatterDataSet)
+        
+        //3) set CombinedData
+        let combinedData = CombinedChartData()
+        combinedData.lineData = data
+        combinedData.scatterData = data2
         
         //4) assign it to chart's data
-        lineChartView.data = lineChartData
+        CombinedChartView.data = combinedData
+        
+        //disable linechart points to be displayed
+        chartDataSet.drawCirclesEnabled = false
+        chartDataSet.drawValuesEnabled = false
     }
     
     

@@ -314,7 +314,7 @@
                                                     </switch>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-wj-g9w" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-wj-g9w" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="62" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -322,7 +322,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="h1D-zM-tvh"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-4e-Wtu" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-4e-Wtu" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="462" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -330,7 +330,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="zhM-lQ-X7Z"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lz-XL-mY9" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lz-XL-mY9" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="862" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -338,7 +338,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="t11-Yf-mLU"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oo5-us-FnS" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oo5-us-FnS" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="1262" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -346,7 +346,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="eSt-HM-aEW"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlp-S4-r5r" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlp-S4-r5r" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="1662" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -354,7 +354,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="kWi-vy-Ztk"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-ey-Qu0" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-ey-Qu0" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="2062" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -362,7 +362,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="Y99-ri-qUJ"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECF-Io-Iy6" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECF-Io-Iy6" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="2462" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -370,7 +370,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="dKJ-Ib-p7w"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="766-tB-jZW" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="766-tB-jZW" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="2862" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -378,7 +378,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="zYo-L1-rKc"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSg-cc-N4L" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSg-cc-N4L" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="3262" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -386,7 +386,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="mIl-iu-Kv3"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sn-Mo-EMO" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sn-Mo-EMO" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="3662" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -394,7 +394,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="qXo-g1-NAV"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TM-XC-3Wc" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TM-XC-3Wc" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="4062" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -402,7 +402,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="gXY-b5-wKi"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27C-9C-Ffu" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27C-9C-Ffu" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="4462" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -410,7 +410,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="NRw-bj-4yo"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZp-02-kmL" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZp-02-kmL" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="4862" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -418,7 +418,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="sRY-Lg-mS0"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-yx-FAI" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-yx-FAI" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="5262" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -426,7 +426,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="rvK-j9-rpK"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKx-Ku-CMI" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKx-Ku-CMI" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="5662" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -434,7 +434,7 @@
                                                     <constraint firstAttribute="width" constant="1024" id="KeX-Bk-GBm"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2E-5L-Ksg" customClass="LineChartView" customModule="Charts">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2E-5L-Ksg" customClass="CombinedChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="6062" width="1024" height="400"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -530,7 +530,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eI5-0x-8QN" customClass="LineChartView" customModule="Charts">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eI5-0x-8QN" customClass="CombinedChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="345" width="1024" height="971"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
