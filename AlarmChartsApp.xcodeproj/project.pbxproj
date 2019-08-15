@@ -21,6 +21,13 @@
 		CC6B1ED722D87C8D00444D48 /* chillerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B1ED622D87C8D00444D48 /* chillerOne.swift */; };
 		CC81DC6622E83F3E00831ABE /* sparkTrendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */; };
 		CC8BFB9E22CDD62B00871EE7 /* LineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */; };
+		CCC6071B2303EAEA00E45E1F /* chiller1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6071A2303EAEA00E45E1F /* chiller1.storyboard */; };
+		CCC6071D2303EECA00E45E1F /* chiller2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6071C2303EECA00E45E1F /* chiller2.storyboard */; };
+		CCC6071F2303EEDA00E45E1F /* chiller3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6071E2303EEDA00E45E1F /* chiller3.storyboard */; };
+		CCC607212303EEEB00E45E1F /* chiller4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC607202303EEEB00E45E1F /* chiller4.storyboard */; };
+		CCC607232303EF1200E45E1F /* history.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC607222303EF1200E45E1F /* history.storyboard */; };
+		CCC9A83D2303E2C500043065 /* trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC9A83C2303E2C500043065 /* trend.storyboard */; };
+		CCEC19512303B03C001F25FE /* pieChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEC19502303B03C001F25FE /* pieChart.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		CC6B1ED622D87C8D00444D48 /* chillerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chillerOne.swift; sourceTree = "<group>"; };
 		CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sparkTrendController.swift; path = ../sparkTrendController.swift; sourceTree = "<group>"; };
 		CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController.swift; sourceTree = "<group>"; };
+		CCC6071A2303EAEA00E45E1F /* chiller1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chiller1.storyboard; sourceTree = "<group>"; };
+		CCC6071C2303EECA00E45E1F /* chiller2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chiller2.storyboard; sourceTree = "<group>"; };
+		CCC6071E2303EEDA00E45E1F /* chiller3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chiller3.storyboard; sourceTree = "<group>"; };
+		CCC607202303EEEB00E45E1F /* chiller4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chiller4.storyboard; sourceTree = "<group>"; };
+		CCC607222303EF1200E45E1F /* history.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = history.storyboard; sourceTree = "<group>"; };
+		CCC9A83C2303E2C500043065 /* trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = trend.storyboard; sourceTree = "<group>"; };
+		CCEC19502303B03C001F25FE /* pieChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = pieChart.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,7 @@
 		CC5D8DB022C99ABC003793CE /* AlarmChartsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CCEC194F2303B001001F25FE /* Storyboards */,
 				CC5D8DB122C99ABC003793CE /* AppDelegate.swift */,
 				CC5D8DB322C99ABC003793CE /* ViewController.swift */,
 				CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */,
@@ -103,13 +118,27 @@
 				CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */,
 				CC65E18022D3326900CEB2D2 /* HistoryController.swift */,
 				CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */,
-				CC5D8DB522C99ABC003793CE /* Main.storyboard */,
 				CC5D8DBB22C99ABF003793CE /* Assets.xcassets */,
 				CC5D8DBD22C99ABF003793CE /* LaunchScreen.storyboard */,
 				CC5D8DC022C99ABF003793CE /* Info.plist */,
 				CC5D8DB822C99ABC003793CE /* AlarmChartsApp.xcdatamodeld */,
 			);
 			path = AlarmChartsApp;
+			sourceTree = "<group>";
+		};
+		CCEC194F2303B001001F25FE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CC5D8DB522C99ABC003793CE /* Main.storyboard */,
+				CCEC19502303B03C001F25FE /* pieChart.storyboard */,
+				CCC9A83C2303E2C500043065 /* trend.storyboard */,
+				CCC6071A2303EAEA00E45E1F /* chiller1.storyboard */,
+				CCC6071C2303EECA00E45E1F /* chiller2.storyboard */,
+				CCC6071E2303EEDA00E45E1F /* chiller3.storyboard */,
+				CCC607202303EEEB00E45E1F /* chiller4.storyboard */,
+				CCC607222303EF1200E45E1F /* history.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +201,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC607212303EEEB00E45E1F /* chiller4.storyboard in Resources */,
+				CCC6071F2303EEDA00E45E1F /* chiller3.storyboard in Resources */,
 				CC5D8DBF22C99ABF003793CE /* LaunchScreen.storyboard in Resources */,
+				CCC607232303EF1200E45E1F /* history.storyboard in Resources */,
+				CCC9A83D2303E2C500043065 /* trend.storyboard in Resources */,
 				CC5D8DBC22C99ABF003793CE /* Assets.xcassets in Resources */,
+				CCEC19512303B03C001F25FE /* pieChart.storyboard in Resources */,
+				CCC6071B2303EAEA00E45E1F /* chiller1.storyboard in Resources */,
+				CCC6071D2303EECA00E45E1F /* chiller2.storyboard in Resources */,
 				CC5D8DB722C99ABC003793CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

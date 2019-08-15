@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z5B-8H-wbg">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Line Chart Controller2-->
+        <scene sceneID="bvj-m8-TgP">
+            <objects>
+                <viewController id="T6o-i4-WzL" customClass="LineChartController2" customModule="AlarmChartsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G9d-Up-E1u">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-GD-9Lc">
+                                <rect key="frame" x="0.0" y="74" width="1024" height="1227"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NH1-gQ-IGd">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="6462"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Kgt-nF-k1M">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x84-Yi-Skz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-eS-Vq7">
+                                                        <rect key="frame" x="56" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph1Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="qvT-sm-IJQ"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbl-pE-yQD">
+                                                        <rect key="frame" x="120" y="0.0" width="42" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6s-6z-bg4">
+                                                        <rect key="frame" x="177.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph2Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="2Oz-md-K2b"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tii-EF-XQt">
+                                                        <rect key="frame" x="242" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ay-AH-mWw">
+                                                        <rect key="frame" x="299.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph3Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="0XU-U9-uFA"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf0-Li-wIA">
+                                                        <rect key="frame" x="364" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jze-aS-b1P">
+                                                        <rect key="frame" x="422" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph4Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="nW6-vE-Op1"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-gT-7yY" userLabel="Graph 5">
+                                                        <rect key="frame" x="486" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qFQ-Hg-LZa">
+                                                        <rect key="frame" x="544" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph5Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="qpf-Lq-ZK3"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 6" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUB-tQ-BMj">
+                                                        <rect key="frame" x="608.5" y="0.0" width="64" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2s-2M-Knq">
+                                                        <rect key="frame" x="687.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph6Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="yep-tj-PWD"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 7" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNO-LH-jrB">
+                                                        <rect key="frame" x="752" y="0.0" width="64" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SfI-hO-PGy">
+                                                        <rect key="frame" x="831.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph7DIsplay:" destination="T6o-i4-WzL" eventType="valueChanged" id="Lfa-A9-jee"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 8" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBp-2Y-Kzp">
+                                                        <rect key="frame" x="895.5" y="0.0" width="64" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFB-RQ-mCa">
+                                                        <rect key="frame" x="975" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph8Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="0EQ-3n-0hx"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="2eo-UB-7Pt">
+                                                <rect key="frame" x="0.0" y="31" width="1024" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkj-LT-LQo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sc-bv-jYv">
+                                                        <rect key="frame" x="59.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph9DIsplay:" destination="T6o-i4-WzL" eventType="valueChanged" id="e6h-Ed-Lj4"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-i4-pMa">
+                                                        <rect key="frame" x="126" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9AJ-KF-eHU">
+                                                        <rect key="frame" x="190.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph10Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="HaC-ep-mi9"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYD-OS-OUm">
+                                                        <rect key="frame" x="257" y="0.0" width="46" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nnd-OP-vVx">
+                                                        <rect key="frame" x="320" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph11Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="lRe-I4-JDU"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL0-fV-kVM">
+                                                        <rect key="frame" x="386" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKs-Ae-eZK">
+                                                        <rect key="frame" x="451" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph12Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="yb8-v9-zgN"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k92-IE-xHy">
+                                                        <rect key="frame" x="517" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYA-pt-OZW">
+                                                        <rect key="frame" x="582" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph13Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="U9c-Xe-NQi"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 14" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hr-HR-fts">
+                                                        <rect key="frame" x="648" y="0.0" width="48" height="31"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="707-J5-UPb">
+                                                        <rect key="frame" x="713" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph14Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="qCX-p9-Xb1"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7D-1q-dk7">
+                                                        <rect key="frame" x="779.5" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqE-eP-RK9">
+                                                        <rect key="frame" x="844" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph15Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="WH9-By-Kcm"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph 16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZq-nC-AGO">
+                                                        <rect key="frame" x="910.5" y="0.0" width="47.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKL-pG-7gf">
+                                                        <rect key="frame" x="975" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="graph16Display:" destination="T6o-i4-WzL" eventType="valueChanged" id="dHh-6I-Ooy"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Na9-6X-jxc" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="62" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="01y-EC-EWz"/>
+                                                    <constraint firstAttribute="height" constant="400" id="ZIs-Ah-Lw5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4P-yx-T13" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="462" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="GX2-Hu-VyK"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="scu-xg-5Bv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrA-wC-3g0" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="862" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="iqX-M3-Jrl"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="wFm-yh-1Yy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUu-sh-yPM" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="1262" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="FKy-VL-bcg"/>
+                                                    <constraint firstAttribute="height" constant="400" id="kOc-Tn-5p3"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vis-J6-WJb" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="1662" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="7Eg-FF-GLQ"/>
+                                                    <constraint firstAttribute="height" constant="400" id="llY-YX-zgE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHm-Iy-w6z" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="2062" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="3kJ-Ps-l2Q"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="tL5-4t-sfr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ng0-Dq-Y4l" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="2462" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="CJF-YP-zRa"/>
+                                                    <constraint firstAttribute="height" constant="400" id="OVV-5a-W7Y"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owh-IS-Adw" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="2862" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="Fi3-mh-GfZ"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="aX6-Jt-DAu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-at-FXL" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="3262" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="QeW-TF-C5E"/>
+                                                    <constraint firstAttribute="height" constant="400" id="iZS-Re-4dy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcU-dK-75T" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="3662" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="OGL-nn-eQc"/>
+                                                    <constraint firstAttribute="height" constant="400" id="dI6-0p-uZn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sH1-4g-vEb" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="4062" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="YDG-op-7mr"/>
+                                                    <constraint firstAttribute="height" constant="400" id="xV1-FS-Peq"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-xI-m4u" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="4462" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="2Wz-ky-UhA"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="t5O-ad-iGe"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-fi-9ZA" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="4862" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1024" id="ETU-qg-Zvw"/>
+                                                    <constraint firstAttribute="height" constant="400" id="nf3-GX-mWB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-As-CS7" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="5262" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="KYf-eO-KBY"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="q3C-u1-AHV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUE-MA-Lvy" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="5662" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="1N2-Ow-ccD"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="rjn-OS-K9h"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzG-Sq-pf4" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="6062" width="1024" height="400"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="TbV-TB-EgN"/>
+                                                    <constraint firstAttribute="width" constant="1024" id="hRf-xK-QcJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NH1-gQ-IGd" firstAttribute="leading" secondItem="WGH-GD-9Lc" secondAttribute="leading" id="4ik-3n-xRF"/>
+                                    <constraint firstAttribute="trailing" secondItem="NH1-gQ-IGd" secondAttribute="trailing" id="Nxb-dV-DER"/>
+                                    <constraint firstItem="NH1-gQ-IGd" firstAttribute="width" secondItem="WGH-GD-9Lc" secondAttribute="width" id="ajo-ZZ-AHE"/>
+                                    <constraint firstItem="NH1-gQ-IGd" firstAttribute="top" secondItem="WGH-GD-9Lc" secondAttribute="top" id="k7U-YL-VbW"/>
+                                    <constraint firstAttribute="bottom" secondItem="NH1-gQ-IGd" secondAttribute="bottom" id="mxb-CK-bcW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WGH-GD-9Lc" firstAttribute="top" secondItem="Mcy-aX-jpW" secondAttribute="top" id="4uc-eK-JZM"/>
+                            <constraint firstItem="WGH-GD-9Lc" firstAttribute="leading" secondItem="Mcy-aX-jpW" secondAttribute="leading" id="FsH-oS-eYK"/>
+                            <constraint firstItem="Mcy-aX-jpW" firstAttribute="trailing" secondItem="WGH-GD-9Lc" secondAttribute="trailing" id="VKB-CA-ZvQ"/>
+                            <constraint firstItem="WGH-GD-9Lc" firstAttribute="top" secondItem="Mcy-aX-jpW" secondAttribute="top" id="XpY-4t-cdh"/>
+                            <constraint firstItem="Mcy-aX-jpW" firstAttribute="bottom" secondItem="WGH-GD-9Lc" secondAttribute="bottom" id="bgj-EM-Jzp"/>
+                            <constraint firstItem="Mcy-aX-jpW" firstAttribute="bottom" secondItem="WGH-GD-9Lc" secondAttribute="bottom" id="pwo-BT-9Jn"/>
+                            <constraint firstItem="WGH-GD-9Lc" firstAttribute="height" secondItem="Mcy-aX-jpW" secondAttribute="height" id="xQh-fd-UCf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mcy-aX-jpW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="312-Qk-Ik9"/>
+                    <connections>
+                        <outlet property="graph10Controller" destination="9AJ-KF-eHU" id="2ZV-70-LCk"/>
+                        <outlet property="graph11Controller" destination="Nnd-OP-vVx" id="1DM-UZ-Faf"/>
+                        <outlet property="graph12Controller" destination="fKs-Ae-eZK" id="3zG-eZ-2NI"/>
+                        <outlet property="graph13Controller" destination="ZYA-pt-OZW" id="904-e2-yum"/>
+                        <outlet property="graph14Controller" destination="707-J5-UPb" id="XG2-9E-oXd"/>
+                        <outlet property="graph15Controller" destination="YqE-eP-RK9" id="enE-vB-ejy"/>
+                        <outlet property="graph16Controller" destination="VKL-pG-7gf" id="0yZ-e3-qV9"/>
+                        <outlet property="graph1Controller" destination="xnZ-eS-Vq7" id="Ffa-TB-Ieb"/>
+                        <outlet property="graph2Controller" destination="i6s-6z-bg4" id="DeM-9F-sIB"/>
+                        <outlet property="graph3Controller" destination="9ay-AH-mWw" id="eoL-ej-XL7"/>
+                        <outlet property="graph4Controller" destination="jze-aS-b1P" id="bhg-ah-cOW"/>
+                        <outlet property="graph6Controller" destination="e2s-2M-Knq" id="c7b-De-KY9"/>
+                        <outlet property="graph7Controller" destination="SfI-hO-PGy" id="nin-Oh-AKW"/>
+                        <outlet property="graph8Controller" destination="KFB-RQ-mCa" id="FK4-PX-Yb0"/>
+                        <outlet property="graph9Controller" destination="2sc-bv-jYv" id="Qhf-pU-cQO"/>
+                        <outlet property="gtaph5Contrller" destination="qFQ-Hg-LZa" id="zIa-Ke-OlR"/>
+                        <outlet property="lineChart1" destination="Na9-6X-jxc" id="eIb-hm-XgE"/>
+                        <outlet property="lineChart10" destination="lcU-dK-75T" id="Eo5-gA-Xuw"/>
+                        <outlet property="lineChart11" destination="sH1-4g-vEb" id="1gI-PD-rUF"/>
+                        <outlet property="lineChart12" destination="RwN-xI-m4u" id="jNt-N8-rRP"/>
+                        <outlet property="lineChart13" destination="tNc-fi-9ZA" id="yNQ-fg-IR6"/>
+                        <outlet property="lineChart14" destination="Ltd-As-CS7" id="afj-nv-Dk1"/>
+                        <outlet property="lineChart15" destination="ZUE-MA-Lvy" id="S6K-Xe-naP"/>
+                        <outlet property="lineChart16" destination="UzG-Sq-pf4" id="MJO-st-Kc8"/>
+                        <outlet property="lineChart2" destination="J4P-yx-T13" id="jmc-FE-Pvj"/>
+                        <outlet property="lineChart3" destination="nrA-wC-3g0" id="8lV-Iv-qzF"/>
+                        <outlet property="lineChart4" destination="aUu-sh-yPM" id="8o7-8C-fbn"/>
+                        <outlet property="lineChart5" destination="vis-J6-WJb" id="aHh-HG-9rJ"/>
+                        <outlet property="lineChart6" destination="fHm-Iy-w6z" id="7C9-KF-zej"/>
+                        <outlet property="lineChart7" destination="Ng0-Dq-Y4l" id="lYX-UU-NnM"/>
+                        <outlet property="lineChart8" destination="owh-IS-Adw" id="sMh-r7-EZP"/>
+                        <outlet property="lineChart9" destination="7vo-at-FXL" id="N3b-XR-dNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iue-ae-aE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2967.1875" y="736.60322108345531"/>
+        </scene>
+        <!--Chiller 2-->
+        <scene sceneID="0pf-bG-mAO">
+            <objects>
+                <navigationController title="Chiller 2" automaticallyAdjustsScrollViewInsets="NO" id="Z5B-8H-wbg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chiller 2" id="mzA-E0-IHS"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Ph-uC-QhB">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T6o-i4-WzL" kind="relationship" relationship="rootViewController" id="Iow-v0-UoG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfG-aD-vaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241.796875" y="736.60322108345531"/>
+        </scene>
+    </scenes>
+</document>
