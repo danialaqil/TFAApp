@@ -11,8 +11,8 @@ import Charts
 import Alamofire
 
 class LineChartController: UIViewController {
-    
-    //    https://api.coindesk.com/v1/bpi/currentprice.json
+
+    // http://ec2-13-250-111-0.ap-southeast-1.compute.amazonaws.com/api/response
 
     
     let numberOfSparksGraph1: [Double] = [5,8,6,4,2,1,2,1,1,0]
@@ -157,6 +157,23 @@ class LineChartController: UIViewController {
         customiseChart(yValuesLine: numberOfSparksGraph14, xValuesLine: daysNumbered, CombinedChartView: lineChart14, labelLine: "Line Chart 14", labelScatter: "Sparks", xScatterPoints: xScatter14, yScatterPoints: yScatter14)
         customiseChart(yValuesLine: numberOfSparksGraph15, xValuesLine: daysNumbered, CombinedChartView: lineChart15, labelLine: "Line Chart 15", labelScatter: "Sparks", xScatterPoints: xScatter15, yScatterPoints: yScatter15)
         customiseChart(yValuesLine: numberOfSparksGraph16, xValuesLine: daysNumbered, CombinedChartView: lineChart16, labelLine: "Line Chart 16", labelScatter: "Sparks", xScatterPoints: xScatter16, yScatterPoints: yScatter16)
+        
+        translateCharts(chartView: lineChart1)
+        translateCharts(chartView: lineChart2)
+        translateCharts(chartView: lineChart3)
+        translateCharts(chartView: lineChart4)
+        translateCharts(chartView: lineChart5)
+        translateCharts(chartView: lineChart6)
+        translateCharts(chartView: lineChart7)
+        translateCharts(chartView: lineChart8)
+        translateCharts(chartView: lineChart9)
+        translateCharts(chartView: lineChart10)
+        translateCharts(chartView: lineChart11)
+        translateCharts(chartView: lineChart12)
+        translateCharts(chartView: lineChart13)
+        translateCharts(chartView: lineChart14)
+        translateCharts(chartView: lineChart15)
+        translateCharts(chartView: lineChart16)
 
     
     }
@@ -333,6 +350,85 @@ class LineChartController: UIViewController {
         //disable linechart points to be displayed
         chartDataSet.drawCirclesEnabled = false
         chartDataSet.drawValuesEnabled = false
+    }
+    
+    /*
+     func chartTranslated(chartView: ChartViewBase, dX: CGFloat, dY: CGFloat) {
+        if  chartView == combinedChartView {
+            let currentMatrix = chartView.viewPortHandler.touchMatrix
+            lineChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: lineChartView, invalidate: true)
+        }else {
+            let currentMatrix = chartView.viewPortHandler.touchMatrix
+            combinedChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: combinedChartView, invalidate: true)
+        }
+     }
+     
+     
+     func chartTranslated(chartView: ChartViewBase, dX: CGFloat, dY: CGFloat) {
+        if  chartView == combinedChartView {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let oldMatrix = lineChartView.viewPortHandler.touchMatrix
+            let currentMatrix = CGAffineTransformMake(oldMatrix.a, oldMatrix.b, oldMatrix.c, oldMatrix.d, newMatrix.tx, oldMatrix.ty)
+            lineChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: lineChartView, invalidate: true)
+        }else {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let oldMatrix = combinedChartView.viewPortHandler.touchMatrix
+            let currentMatrix = CGAffineTransformMake(oldMatrix.a, oldMatrix.b, oldMatrix.c, oldMatrix.d, newMatrix.tx, oldMatrix.ty)
+            combinedChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: combinedChartView, invalidate: true)
+        }
+     }
+     */
+    
+    func translateCharts (chartView: CombinedChartView) {
+        let currentMatrix = chartView.viewPortHandler.touchMatrix
+        lineChart1.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart1.viewPortHandler.touchMatrix.a
+            , lineChart1.viewPortHandler.touchMatrix.b, lineChart1.viewPortHandler.touchMatrix.c, lineChart1.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart1.viewPortHandler.touchMatrix.ty), chart: lineChart1, invalidate: true)
+        
+        lineChart2.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart2.viewPortHandler.touchMatrix.a
+            , lineChart2.viewPortHandler.touchMatrix.b, lineChart2.viewPortHandler.touchMatrix.c, lineChart2.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart2.viewPortHandler.touchMatrix.ty), chart: lineChart2, invalidate: true)
+        
+        lineChart3.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart3.viewPortHandler.touchMatrix.a
+            , lineChart3.viewPortHandler.touchMatrix.b, lineChart3.viewPortHandler.touchMatrix.c, lineChart3.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart3.viewPortHandler.touchMatrix.ty), chart: lineChart3, invalidate: true)
+        
+        lineChart4.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart4.viewPortHandler.touchMatrix.a
+            , lineChart4.viewPortHandler.touchMatrix.b, lineChart4.viewPortHandler.touchMatrix.c, lineChart4.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart4.viewPortHandler.touchMatrix.ty), chart: lineChart4, invalidate: true)
+        
+        lineChart5.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart5.viewPortHandler.touchMatrix.a
+            , lineChart5.viewPortHandler.touchMatrix.b, lineChart5.viewPortHandler.touchMatrix.c, lineChart5.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart5.viewPortHandler.touchMatrix.ty), chart: lineChart5, invalidate: true)
+        
+        lineChart6.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart6.viewPortHandler.touchMatrix.a
+            , lineChart6.viewPortHandler.touchMatrix.b, lineChart6.viewPortHandler.touchMatrix.c, lineChart6.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart6.viewPortHandler.touchMatrix.ty), chart: lineChart6, invalidate: true)
+        
+        lineChart7.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart7.viewPortHandler.touchMatrix.a
+            , lineChart7.viewPortHandler.touchMatrix.b, lineChart7.viewPortHandler.touchMatrix.c, lineChart7.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart7.viewPortHandler.touchMatrix.ty), chart: lineChart7, invalidate: true)
+        
+        lineChart8.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart8.viewPortHandler.touchMatrix.a
+            , lineChart8.viewPortHandler.touchMatrix.b, lineChart8.viewPortHandler.touchMatrix.c, lineChart8.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart8.viewPortHandler.touchMatrix.ty), chart: lineChart8, invalidate: true)
+        
+        lineChart9.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart9.viewPortHandler.touchMatrix.a
+            , lineChart9.viewPortHandler.touchMatrix.b, lineChart9.viewPortHandler.touchMatrix.c, lineChart9.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart9.viewPortHandler.touchMatrix.ty), chart: lineChart9, invalidate: true)
+        
+        lineChart10.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart10.viewPortHandler.touchMatrix.a
+            , lineChart10.viewPortHandler.touchMatrix.b, lineChart10.viewPortHandler.touchMatrix.c, lineChart10.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart10.viewPortHandler.touchMatrix.ty), chart: lineChart10, invalidate: true)
+        
+        lineChart11.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart11.viewPortHandler.touchMatrix.a
+            , lineChart11.viewPortHandler.touchMatrix.b, lineChart11.viewPortHandler.touchMatrix.c, lineChart11.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart11.viewPortHandler.touchMatrix.ty), chart: lineChart11, invalidate: true)
+        
+        lineChart12.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart12.viewPortHandler.touchMatrix.a
+            , lineChart12.viewPortHandler.touchMatrix.b, lineChart12.viewPortHandler.touchMatrix.c, lineChart12.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart12.viewPortHandler.touchMatrix.ty), chart: lineChart12, invalidate: true)
+        
+        lineChart13.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart13.viewPortHandler.touchMatrix.a
+            , lineChart13.viewPortHandler.touchMatrix.b, lineChart13.viewPortHandler.touchMatrix.c, lineChart13.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart13.viewPortHandler.touchMatrix.ty), chart: lineChart13, invalidate: true)
+        
+        lineChart14.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart14.viewPortHandler.touchMatrix.a
+            , lineChart14.viewPortHandler.touchMatrix.b, lineChart14.viewPortHandler.touchMatrix.c, lineChart14.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart14.viewPortHandler.touchMatrix.ty), chart: lineChart14, invalidate: true)
+        
+        lineChart15.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart15.viewPortHandler.touchMatrix.a
+            , lineChart15.viewPortHandler.touchMatrix.b, lineChart15.viewPortHandler.touchMatrix.c, lineChart15.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart15.viewPortHandler.touchMatrix.ty), chart: lineChart15, invalidate: true)
+        
+        lineChart16.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart16.viewPortHandler.touchMatrix.a
+            , lineChart16.viewPortHandler.touchMatrix.b, lineChart16.viewPortHandler.touchMatrix.c, lineChart16.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart16.viewPortHandler.touchMatrix.ty), chart: lineChart16, invalidate: true)
+        
     }
     
     
