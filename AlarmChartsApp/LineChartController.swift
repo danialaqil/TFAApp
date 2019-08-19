@@ -383,6 +383,1020 @@ class LineChartController: UIViewController {
      */
     
     func translateCharts (chartView: CombinedChartView) {
+        if chartView == lineChart1 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart2 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart3 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart4 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart5 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart6 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart7 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart8 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart9 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart10 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart11 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart12 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart13 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart14 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart15 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix16 = lineChart16.viewPortHandler.touchMatrix
+            let currentMatrix16 = CGAffineTransform(a: oldMatrix16.a, b: oldMatrix16.b, c: oldMatrix16.c, d: oldMatrix16.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
+            
+        } else if chartView == lineChart16 {
+            let newMatrix = chartView.viewPortHandler.touchMatrix
+            
+            let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
+            let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart1.viewPortHandler.refresh(newMatrix: currentMatrix1, chart: lineChart1, invalidate: true)
+            
+            let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
+            let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart2.viewPortHandler.refresh(newMatrix: currentMatrix2, chart: lineChart2, invalidate: true)
+            
+            let oldMatrix3 = lineChart3.viewPortHandler.touchMatrix
+            let currentMatrix3 = CGAffineTransform(a: oldMatrix3.a, b: oldMatrix3.b, c: oldMatrix3.c, d: oldMatrix3.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart3.viewPortHandler.refresh(newMatrix: currentMatrix3, chart: lineChart3, invalidate: true)
+            
+            let oldMatrix4 = lineChart4.viewPortHandler.touchMatrix
+            let currentMatrix4 = CGAffineTransform(a: oldMatrix4.a, b: oldMatrix4.b, c: oldMatrix4.c, d: oldMatrix4.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart4.viewPortHandler.refresh(newMatrix: currentMatrix4, chart: lineChart4, invalidate: true)
+            
+            let oldMatrix5 = lineChart5.viewPortHandler.touchMatrix
+            let currentMatrix5 = CGAffineTransform(a: oldMatrix5.a, b: oldMatrix5.b, c: oldMatrix5.c, d: oldMatrix5.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart5.viewPortHandler.refresh(newMatrix: currentMatrix5, chart: lineChart5, invalidate: true)
+            
+            let oldMatrix6 = lineChart6.viewPortHandler.touchMatrix
+            let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
+            
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
+            let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
+            
+            let oldMatrix8 = lineChart8.viewPortHandler.touchMatrix
+            let currentMatrix8 = CGAffineTransform(a: oldMatrix8.a, b: oldMatrix8.b, c: oldMatrix8.c, d: oldMatrix8.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart8.viewPortHandler.refresh(newMatrix: currentMatrix8, chart: lineChart8, invalidate: true)
+            
+            let oldMatrix9 = lineChart9.viewPortHandler.touchMatrix
+            let currentMatrix9 = CGAffineTransform(a: oldMatrix9.a, b: oldMatrix9.b, c: oldMatrix9.c, d: oldMatrix9.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart9.viewPortHandler.refresh(newMatrix: currentMatrix9, chart: lineChart9, invalidate: true)
+            
+            let oldMatrix10 = lineChart10.viewPortHandler.touchMatrix
+            let currentMatrix10 = CGAffineTransform(a: oldMatrix10.a, b: oldMatrix10.b, c: oldMatrix10.c, d: oldMatrix10.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart10.viewPortHandler.refresh(newMatrix: currentMatrix10, chart: lineChart10, invalidate: true)
+            
+            let oldMatrix11 = lineChart11.viewPortHandler.touchMatrix
+            let currentMatrix11 = CGAffineTransform(a: oldMatrix11.a, b: oldMatrix11.b, c: oldMatrix11.c, d: oldMatrix11.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart11.viewPortHandler.refresh(newMatrix: currentMatrix11, chart: lineChart11, invalidate: true)
+            
+            let oldMatrix12 = lineChart12.viewPortHandler.touchMatrix
+            let currentMatrix12 = CGAffineTransform(a: oldMatrix12.a, b: oldMatrix12.b, c: oldMatrix12.c, d: oldMatrix12.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart12.viewPortHandler.refresh(newMatrix: currentMatrix12, chart: lineChart12, invalidate: true)
+            
+            let oldMatrix13 = lineChart13.viewPortHandler.touchMatrix
+            let currentMatrix13 = CGAffineTransform(a: oldMatrix13.a, b: oldMatrix13.b, c: oldMatrix13.c, d: oldMatrix13.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart13.viewPortHandler.refresh(newMatrix: currentMatrix13, chart: lineChart13, invalidate: true)
+            
+            let oldMatrix14 = lineChart14.viewPortHandler.touchMatrix
+            let currentMatrix14 = CGAffineTransform(a: oldMatrix14.a, b: oldMatrix14.b, c: oldMatrix14.c, d: oldMatrix14.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart14.viewPortHandler.refresh(newMatrix: currentMatrix14, chart: lineChart14, invalidate: true)
+            
+            let oldMatrix15 = lineChart15.viewPortHandler.touchMatrix
+            let currentMatrix15 = CGAffineTransform(a: oldMatrix15.a, b: oldMatrix15.b, c: oldMatrix15.c, d: oldMatrix15.d, tx: newMatrix.tx, ty: newMatrix.ty)
+            lineChart15.viewPortHandler.refresh(newMatrix: currentMatrix15, chart: lineChart15, invalidate: true)
+            
+        }
+        
+    }
+    
+    /*
+    func translateCharts (chartView: CombinedChartView) {
         let currentMatrix = chartView.viewPortHandler.touchMatrix
         lineChart1.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart1.viewPortHandler.touchMatrix.a
             , lineChart1.viewPortHandler.touchMatrix.b, lineChart1.viewPortHandler.touchMatrix.c, lineChart1.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart1.viewPortHandler.touchMatrix.ty), chart: lineChart1, invalidate: true)
@@ -433,7 +1447,7 @@ class LineChartController: UIViewController {
             , lineChart16.viewPortHandler.touchMatrix.b, lineChart16.viewPortHandler.touchMatrix.c,  lineChart16.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart16.viewPortHandler.touchMatrix.ty), chart: lineChart16, invalidate: true)
         
     }
-    
+    */
     
     
 
