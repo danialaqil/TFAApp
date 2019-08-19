@@ -6,6 +6,13 @@
 //  Copyright © 2019 imdadsl. All rights reserved.
 //
 
+
+
+
+// Guide:
+
+//https://docs.google.com/document/d/17Rq4P2HtR17UvCoXsFNAZYs77xKFgYWLocCEldpp5zo/edit?usp=sharing
+
 import UIKit
 import Charts
 import Alamofire

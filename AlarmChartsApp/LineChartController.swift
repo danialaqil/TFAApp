@@ -377,6 +377,9 @@ class LineChartController: UIViewController {
             combinedChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: combinedChartView, invalidate: true)
         }
      }
+     
+     HOW DO I THIS WORK WHAAAAAAAAAT
+     
      */
     
     func translateCharts (chartView: CombinedChartView) {
@@ -427,7 +430,7 @@ class LineChartController: UIViewController {
             , lineChart15.viewPortHandler.touchMatrix.b, lineChart15.viewPortHandler.touchMatrix.c, lineChart15.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart15.viewPortHandler.touchMatrix.ty), chart: lineChart15, invalidate: true)
         
         lineChart16.viewPortHandler.refresh(newMatrix: __CGAffineTransformMake(lineChart16.viewPortHandler.touchMatrix.a
-            , lineChart16.viewPortHandler.touchMatrix.b, lineChart16.viewPortHandler.touchMatrix.c, lineChart16.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart16.viewPortHandler.touchMatrix.ty), chart: lineChart16, invalidate: true)
+            , lineChart16.viewPortHandler.touchMatrix.b, lineChart16.viewPortHandler.touchMatrix.c,  lineChart16.viewPortHandler.touchMatrix.d, currentMatrix.tx, lineChart16.viewPortHandler.touchMatrix.ty), chart: lineChart16, invalidate: true)
         
     }
     
