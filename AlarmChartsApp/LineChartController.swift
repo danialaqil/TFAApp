@@ -107,6 +107,39 @@ class LineChartController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = "Chiller 1"
         
+        lineChart1.pinchZoomEnabled = true
+        lineChart1.doubleTapToZoomEnabled = true
+        lineChart2.pinchZoomEnabled = true
+        lineChart2.doubleTapToZoomEnabled = true
+        lineChart3.pinchZoomEnabled = true
+        lineChart3.doubleTapToZoomEnabled = true
+        lineChart4.pinchZoomEnabled = true
+        lineChart4.doubleTapToZoomEnabled = true
+        lineChart5.pinchZoomEnabled = true
+        lineChart5.doubleTapToZoomEnabled = true
+        lineChart6.pinchZoomEnabled = true
+        lineChart6.doubleTapToZoomEnabled = true
+        lineChart7.pinchZoomEnabled = true
+        lineChart7.doubleTapToZoomEnabled = true
+        lineChart8.pinchZoomEnabled = true
+        lineChart8.doubleTapToZoomEnabled = true
+        lineChart9.pinchZoomEnabled = true
+        lineChart9.doubleTapToZoomEnabled = true
+        lineChart10.pinchZoomEnabled = true
+        lineChart10.doubleTapToZoomEnabled = true
+        lineChart11.pinchZoomEnabled = true
+        lineChart11.doubleTapToZoomEnabled = true
+        lineChart12.pinchZoomEnabled = true
+        lineChart12.doubleTapToZoomEnabled = true
+        lineChart13.pinchZoomEnabled = true
+        lineChart13.doubleTapToZoomEnabled = true
+        lineChart14.pinchZoomEnabled = true
+        lineChart14.doubleTapToZoomEnabled = true
+        lineChart15.pinchZoomEnabled = true
+        lineChart15.doubleTapToZoomEnabled = true
+        lineChart16.pinchZoomEnabled = true
+        lineChart16.doubleTapToZoomEnabled = true
+        
         graph1Controller.isOn = false
         graph2Controller.isOn = false
         graph3Controller.isOn = false
@@ -384,7 +417,7 @@ class LineChartController: UIViewController {
     
     func translateCharts (chartView: CombinedChartView) {
         if chartView == lineChart1 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart1.viewPortHandler.touchMatrix
             
             let oldMatrix2 = lineChart2.viewPortHandler.touchMatrix
             let currentMatrix2 = CGAffineTransform(a: oldMatrix2.a, b: oldMatrix2.b, c: oldMatrix2.c, d: oldMatrix2.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -447,7 +480,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart2 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart2.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -469,7 +502,7 @@ class LineChartController: UIViewController {
             let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
             
-            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
             let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
             
@@ -510,7 +543,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart3 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart3.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -532,7 +565,7 @@ class LineChartController: UIViewController {
             let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
             
-            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
             let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
             
@@ -573,7 +606,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart4 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart4.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -595,7 +628,7 @@ class LineChartController: UIViewController {
             let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
             
-            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
             let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
             
@@ -636,7 +669,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart5 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart5.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -658,7 +691,7 @@ class LineChartController: UIViewController {
             let currentMatrix6 = CGAffineTransform(a: oldMatrix6.a, b: oldMatrix6.b, c: oldMatrix6.c, d: oldMatrix6.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart6.viewPortHandler.refresh(newMatrix: currentMatrix6, chart: lineChart6, invalidate: true)
             
-            let oldMatrix7 = lineChart3.viewPortHandler.touchMatrix
+            let oldMatrix7 = lineChart7.viewPortHandler.touchMatrix
             let currentMatrix7 = CGAffineTransform(a: oldMatrix7.a, b: oldMatrix7.b, c: oldMatrix7.c, d: oldMatrix7.d, tx: newMatrix.tx, ty: newMatrix.ty)
             lineChart7.viewPortHandler.refresh(newMatrix: currentMatrix7, chart: lineChart7, invalidate: true)
             
@@ -699,7 +732,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart6 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart6.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -762,7 +795,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart7 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart7.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -825,7 +858,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart8 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart8.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -888,7 +921,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart9 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart9.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -951,7 +984,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart10 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart10.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -1014,7 +1047,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart11 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart11.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -1077,7 +1110,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart12 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart12.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -1140,7 +1173,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart13 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart13.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -1203,7 +1236,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart14 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart14.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -1266,7 +1299,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart15 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart15.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
@@ -1329,7 +1362,7 @@ class LineChartController: UIViewController {
             lineChart16.viewPortHandler.refresh(newMatrix: currentMatrix16, chart: lineChart16, invalidate: true)
             
         } else if chartView == lineChart16 {
-            let newMatrix = chartView.viewPortHandler.touchMatrix
+            let newMatrix = lineChart16.viewPortHandler.touchMatrix
             
             let oldMatrix1 = lineChart1.viewPortHandler.touchMatrix
             let currentMatrix1 = CGAffineTransform(a: oldMatrix1.a, b: oldMatrix1.b, c: oldMatrix1.c, d: oldMatrix1.d, tx: newMatrix.tx, ty: newMatrix.ty)
