@@ -87,6 +87,7 @@
                         <viewLayoutGuide key="safeArea" id="eTa-Pe-mr1"/>
                     </view>
                     <navigationItem key="navigationItem" id="LbH-th-pgZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="chillerFour" destination="Oni-23-QvQ" id="fzF-6I-yCM"/>
                         <outlet property="chillerOne" destination="Isn-5O-ChB" id="p5n-Ok-a8S"/>

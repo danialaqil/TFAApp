@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eqq-wh-gt0">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Screen 2-->
+        <scene sceneID="GUm-gq-2L2">
+            <objects>
+                <viewController title="Screen 2" id="Eqq-wh-gt0" customClass="screen2controller" customModule="AlarmChartsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T4A-Wx-tC3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="2800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSe-hX-1q7">
+                                <rect key="frame" x="0.0" y="74" width="1024" height="2661"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufW-mL-8lC" userLabel="trendContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="2689"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 1:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkc-sw-44s">
+                                                <rect key="frame" x="52" y="60" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="GGG-Eo-qzo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLL-R9-UGP" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="123.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 2:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgD-1D-1LK">
+                                                <rect key="frame" x="52" y="724" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="ZbC-id-TpS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3v-Wr-cre" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="787.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 3:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z78-cC-6cs">
+                                                <rect key="frame" x="52" y="1380" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="LGN-jc-CQJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67u-Z1-6k4" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="1443.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiller 4:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT5-YH-yKm">
+                                                <rect key="frame" x="52" y="2012" width="920" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="dB0-Bj-1ZK"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="fw1-kz-XLP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-8K-ArR" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="52" y="2075.5" width="920" height="426.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="j3v-Wr-cre" firstAttribute="width" secondItem="Bkc-sw-44s" secondAttribute="width" id="0mb-mX-78s"/>
+                                            <constraint firstItem="67u-Z1-6k4" firstAttribute="centerX" secondItem="Z78-cC-6cs" secondAttribute="centerX" id="2My-gr-CTk"/>
+                                            <constraint firstItem="ycd-8K-ArR" firstAttribute="width" secondItem="Bkc-sw-44s" secondAttribute="width" id="38m-5b-XkC"/>
+                                            <constraint firstItem="67u-Z1-6k4" firstAttribute="centerX" secondItem="ufW-mL-8lC" secondAttribute="centerX" id="5c7-rj-Uyg"/>
+                                            <constraint firstItem="67u-Z1-6k4" firstAttribute="firstBaseline" secondItem="Z78-cC-6cs" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="6gm-oc-6i6"/>
+                                            <constraint firstItem="ycd-8K-ArR" firstAttribute="centerX" secondItem="qT5-YH-yKm" secondAttribute="centerX" id="82U-Qr-qtm"/>
+                                            <constraint firstItem="RgD-1D-1LK" firstAttribute="width" secondItem="Bkc-sw-44s" secondAttribute="width" id="Cyz-MA-9dC"/>
+                                            <constraint firstItem="Z78-cC-6cs" firstAttribute="centerX" secondItem="j3v-Wr-cre" secondAttribute="centerX" id="Gru-O0-nEA"/>
+                                            <constraint firstItem="Bkc-sw-44s" firstAttribute="top" secondItem="ufW-mL-8lC" secondAttribute="top" constant="60" id="Hl2-PU-0xa"/>
+                                            <constraint firstItem="RgD-1D-1LK" firstAttribute="top" secondItem="yLL-R9-UGP" secondAttribute="bottom" constant="174" id="IMF-jr-ZYl"/>
+                                            <constraint firstItem="ycd-8K-ArR" firstAttribute="firstBaseline" secondItem="qT5-YH-yKm" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="JWE-xG-oiw"/>
+                                            <constraint firstItem="j3v-Wr-cre" firstAttribute="height" secondItem="yLL-R9-UGP" secondAttribute="height" id="Kgw-hQ-XyM"/>
+                                            <constraint firstItem="Z78-cC-6cs" firstAttribute="width" secondItem="Bkc-sw-44s" secondAttribute="width" id="Lj6-nT-LGW"/>
+                                            <constraint firstItem="67u-Z1-6k4" firstAttribute="height" secondItem="yLL-R9-UGP" secondAttribute="height" id="LlI-hR-0Ds"/>
+                                            <constraint firstItem="qT5-YH-yKm" firstAttribute="centerX" secondItem="67u-Z1-6k4" secondAttribute="centerX" id="NKB-vP-U8S"/>
+                                            <constraint firstItem="yLL-R9-UGP" firstAttribute="centerX" secondItem="Bkc-sw-44s" secondAttribute="centerX" id="Oop-vU-caJ"/>
+                                            <constraint firstItem="Z78-cC-6cs" firstAttribute="top" secondItem="j3v-Wr-cre" secondAttribute="bottom" constant="166" id="Qpb-Z3-erl"/>
+                                            <constraint firstItem="yLL-R9-UGP" firstAttribute="width" secondItem="Bkc-sw-44s" secondAttribute="width" id="Win-6u-3aE"/>
+                                            <constraint firstItem="j3v-Wr-cre" firstAttribute="firstBaseline" secondItem="RgD-1D-1LK" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="YPe-OR-n3M"/>
+                                            <constraint firstAttribute="height" constant="2689" id="Z3i-Ux-itl"/>
+                                            <constraint firstAttribute="bottom" secondItem="ycd-8K-ArR" secondAttribute="bottom" constant="187" id="dpM-Xj-04x"/>
+                                            <constraint firstItem="67u-Z1-6k4" firstAttribute="width" secondItem="Bkc-sw-44s" secondAttribute="width" id="e3K-mh-fIP"/>
+                                            <constraint firstItem="RgD-1D-1LK" firstAttribute="centerX" secondItem="yLL-R9-UGP" secondAttribute="centerX" id="h4x-2C-fe0"/>
+                                            <constraint firstItem="Bkc-sw-44s" firstAttribute="leading" secondItem="ufW-mL-8lC" secondAttribute="leading" constant="52" id="i9p-fp-xuX"/>
+                                            <constraint firstItem="j3v-Wr-cre" firstAttribute="centerX" secondItem="RgD-1D-1LK" secondAttribute="centerX" id="jGr-Qj-N1x"/>
+                                            <constraint firstItem="qT5-YH-yKm" firstAttribute="top" secondItem="67u-Z1-6k4" secondAttribute="bottom" constant="142" id="nDa-Hs-P7o"/>
+                                            <constraint firstItem="ycd-8K-ArR" firstAttribute="height" secondItem="yLL-R9-UGP" secondAttribute="height" id="pM0-q2-BzI"/>
+                                            <constraint firstItem="qT5-YH-yKm" firstAttribute="width" secondItem="Bkc-sw-44s" secondAttribute="width" id="vkB-90-WMS"/>
+                                            <constraint firstItem="yLL-R9-UGP" firstAttribute="firstBaseline" secondItem="Bkc-sw-44s" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="xF9-Kc-zvf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ufW-mL-8lC" secondAttribute="trailing" id="F3r-o4-6fV"/>
+                                    <constraint firstAttribute="bottom" secondItem="ufW-mL-8lC" secondAttribute="bottom" constant="-9" id="PQu-JV-unW"/>
+                                    <constraint firstItem="ufW-mL-8lC" firstAttribute="leading" secondItem="aSe-hX-1q7" secondAttribute="leading" id="U1j-tw-cLN"/>
+                                    <constraint firstItem="ufW-mL-8lC" firstAttribute="top" secondItem="aSe-hX-1q7" secondAttribute="top" id="WHg-7r-edb"/>
+                                    <constraint firstItem="ufW-mL-8lC" firstAttribute="centerX" secondItem="aSe-hX-1q7" secondAttribute="centerX" id="cNy-ng-PzF"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aSe-hX-1q7" firstAttribute="top" secondItem="e6W-dF-E1n" secondAttribute="top" id="EkY-Ap-9EU"/>
+                            <constraint firstAttribute="trailing" secondItem="aSe-hX-1q7" secondAttribute="trailing" id="XBH-Lk-tmD"/>
+                            <constraint firstItem="aSe-hX-1q7" firstAttribute="bottom" secondItem="e6W-dF-E1n" secondAttribute="bottom" id="XrT-sq-glg"/>
+                            <constraint firstItem="aSe-hX-1q7" firstAttribute="leading" secondItem="T4A-Wx-tC3" secondAttribute="leading" id="zC4-DM-1yN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e6W-dF-E1n"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chillers" id="ryi-LG-4fk"/>
+                    <navigationItem key="navigationItem" id="ZZm-xB-gCt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="1024" height="2800"/>
+                    <connections>
+                        <outlet property="chiller1Chart" destination="yLL-R9-UGP" id="hpM-wa-3vZ"/>
+                        <outlet property="chiller2Chart" destination="j3v-Wr-cre" id="lUl-9o-3lC"/>
+                        <outlet property="chiller3Chart" destination="67u-Z1-6k4" id="Rwp-QG-l5g"/>
+                        <outlet property="chiller4Chart" destination="ycd-8K-ArR" id="oxb-vK-WJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOa-PE-3lp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241.796875" y="4511.8594436310395"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FaT-v0-lc3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w5h-WB-P17" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uzd-Q1-rt2">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eqq-wh-gt0" kind="relationship" relationship="rootViewController" id="UJ6-Vx-Md8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abe-Jv-Rxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="4197"/>
+        </scene>
+    </scenes>
+</document>

@@ -18,9 +18,10 @@
 		CC65E17D22D3304400CEB2D2 /* LineChartController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */; };
 		CC65E17F22D3314D00CEB2D2 /* LineChartController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */; };
 		CC65E18122D3326900CEB2D2 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65E18022D3326900CEB2D2 /* HistoryController.swift */; };
-		CC6B1ED722D87C8D00444D48 /* chillerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B1ED622D87C8D00444D48 /* chillerOne.swift */; };
 		CC81DC6622E83F3E00831ABE /* sparkTrendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */; };
 		CC8BFB9E22CDD62B00871EE7 /* LineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */; };
+		CCBCE1352314D1F30056F4B1 /* screen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBCE1342314D1F30056F4B1 /* screen2.storyboard */; };
+		CCBCE13A2314D2B50056F4B1 /* screen2controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBCE1392314D2B50056F4B1 /* screen2controller.swift */; };
 		CCC6071B2303EAEA00E45E1F /* chiller1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6071A2303EAEA00E45E1F /* chiller1.storyboard */; };
 		CCC6071D2303EECA00E45E1F /* chiller2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6071C2303EECA00E45E1F /* chiller2.storyboard */; };
 		CCC6071F2303EEDA00E45E1F /* chiller3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6071E2303EEDA00E45E1F /* chiller3.storyboard */; };
@@ -46,9 +47,10 @@
 		CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController3.swift; sourceTree = "<group>"; };
 		CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController4.swift; sourceTree = "<group>"; };
 		CC65E18022D3326900CEB2D2 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
-		CC6B1ED622D87C8D00444D48 /* chillerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chillerOne.swift; sourceTree = "<group>"; };
 		CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sparkTrendController.swift; path = ../sparkTrendController.swift; sourceTree = "<group>"; };
 		CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController.swift; sourceTree = "<group>"; };
+		CCBCE1342314D1F30056F4B1 /* screen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = screen2.storyboard; sourceTree = "<group>"; };
+		CCBCE1392314D2B50056F4B1 /* screen2controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen2controller.swift; sourceTree = "<group>"; };
 		CCC6071A2303EAEA00E45E1F /* chiller1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chiller1.storyboard; sourceTree = "<group>"; };
 		CCC6071C2303EECA00E45E1F /* chiller2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chiller2.storyboard; sourceTree = "<group>"; };
 		CCC6071E2303EEDA00E45E1F /* chiller3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chiller3.storyboard; sourceTree = "<group>"; };
@@ -110,9 +112,9 @@
 			children = (
 				CCEC194F2303B001001F25FE /* Storyboards */,
 				CC5D8DB122C99ABC003793CE /* AppDelegate.swift */,
+				CCBCE1392314D2B50056F4B1 /* screen2controller.swift */,
 				CC5D8DB322C99ABC003793CE /* ViewController.swift */,
 				CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */,
-				CC6B1ED622D87C8D00444D48 /* chillerOne.swift */,
 				CC65E17A22D3244E00CEB2D2 /* LineChartController2.swift */,
 				CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */,
 				CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */,
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5D8DB522C99ABC003793CE /* Main.storyboard */,
+				CCBCE1342314D1F30056F4B1 /* screen2.storyboard */,
 				CCEC19502303B03C001F25FE /* pieChart.storyboard */,
 				CCC9A83C2303E2C500043065 /* trend.storyboard */,
 				CCC6071A2303EAEA00E45E1F /* chiller1.storyboard */,
@@ -175,6 +178,7 @@
 				TargetAttributes = {
 					CC5D8DAD22C99ABC003793CE = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -202,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC607212303EEEB00E45E1F /* chiller4.storyboard in Resources */,
+				CCBCE1352314D1F30056F4B1 /* screen2.storyboard in Resources */,
 				CCC6071F2303EEDA00E45E1F /* chiller3.storyboard in Resources */,
 				CC5D8DBF22C99ABF003793CE /* LaunchScreen.storyboard in Resources */,
 				CCC607232303EF1200E45E1F /* history.storyboard in Resources */,
@@ -265,12 +270,12 @@
 			files = (
 				CC65E18122D3326900CEB2D2 /* HistoryController.swift in Sources */,
 				CC5D8DB422C99ABC003793CE /* ViewController.swift in Sources */,
+				CCBCE13A2314D2B50056F4B1 /* screen2controller.swift in Sources */,
 				CC5D8DBA22C99ABC003793CE /* AlarmChartsApp.xcdatamodeld in Sources */,
 				CC65E17F22D3314D00CEB2D2 /* LineChartController4.swift in Sources */,
 				CC8BFB9E22CDD62B00871EE7 /* LineChartController.swift in Sources */,
 				CC81DC6622E83F3E00831ABE /* sparkTrendController.swift in Sources */,
 				CC65E17B22D3244E00CEB2D2 /* LineChartController2.swift in Sources */,
-				CC6B1ED722D87C8D00444D48 /* chillerOne.swift in Sources */,
 				CC65E17D22D3304400CEB2D2 /* LineChartController3.swift in Sources */,
 				CC5D8DB222C99ABC003793CE /* AppDelegate.swift in Sources */,
 			);
@@ -419,6 +424,7 @@
 			baseConfigurationReference = 1417C0AE1ADC40EC5806DE2C /* Pods-AlarmChartsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RL7SS7F5J5;
 				INFOPLIST_FILE = AlarmChartsApp/Info.plist;
@@ -428,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = imdadsl.AlarmChartsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,6 +445,7 @@
 			baseConfigurationReference = 742E07C93F5F22EC2AEEC9A9 /* Pods-AlarmChartsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RL7SS7F5J5;
 				INFOPLIST_FILE = AlarmChartsApp/Info.plist;

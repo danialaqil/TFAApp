@@ -7,5 +7,6 @@ target 'AlarmChartsApp' do
 pod 'Charts'
 pod 'Socket.IO-Client-Swift', '~> 15.1.0'
 pod 'Alamofire', '~> 4.0'
+pod 'SnapKit', '~> 5.0.0'
 
 end
