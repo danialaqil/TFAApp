@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yrw-lh-sFz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V1o-Ly-LSL">
     <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Trends-->
+        <!--Chillers-->
         <scene sceneID="Sre-ZJ-dd0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgw-OJ-Fvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="yrw-lh-sFz" customClass="sparkTrendController" customModule="AlarmChartsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="syt-QI-h1W">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="2800"/>
@@ -131,8 +130,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xn9-B7-FYk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Trends" id="SOs-et-7HL"/>
-                    <navigationItem key="navigationItem" id="97c-XF-IjV"/>
+                    <navigationItem key="navigationItem" title="Chillers" id="VHq-at-wgN"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="1024" height="2800"/>
                     <connections>
@@ -142,14 +140,19 @@
                         <outlet property="lineChart2" destination="Xs5-Db-fba" id="kxL-nG-d3x"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgw-OJ-Fvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OHm-gO-YWM">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </navigationBar>
             </objects>
             <point key="canvasLocation" x="2241.796875" y="4511.8594436310395"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Trends-->
         <scene sceneID="yvx-X9-SWa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3at-aK-FHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V1o-Ly-LSL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trends" id="SOs-et-7HL"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Imm-ax-wkg">
@@ -161,6 +164,7 @@
                         <segue destination="yrw-lh-sFz" kind="relationship" relationship="rootViewController" id="Dph-M8-BhT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3at-aK-FHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1518" y="4197"/>
         </scene>

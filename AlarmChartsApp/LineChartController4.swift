@@ -63,6 +63,9 @@ class LineChartController4: UIViewController {
     let xScatter16: [Double] = []
     let yScatter16: [Double] = []
     
+    
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    
     @IBOutlet weak var lineChart1: CombinedChartView!
     @IBOutlet weak var lineChart2: CombinedChartView!
     @IBOutlet weak var lineChart3: CombinedChartView!

@@ -11,8 +11,8 @@ import SnapKit
 import Alamofire
 import Charts
 
+
 class screen2controller: UIViewController {
-    
     let rule1xChiller1: [Double] = [1,2,3,4,5,6,7,8,9,10]
     let rule1yChiller1: [Double]  = [1,4,6,3,6,7,9,1,7,8]
     
@@ -48,13 +48,22 @@ class screen2controller: UIViewController {
     
     @IBOutlet weak var chiller4Chart: CombinedChartView!
     
+    @IBOutlet weak var chiller1go: UIButton!
+    @IBOutlet weak var chiller2go: UIButton!
+    @IBOutlet weak var chiller3go: UIButton!
+    @IBOutlet weak var chiller4go: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.topItem?.title = "Chillers"
+        navigationController?.navigationBar.topItem?.title = "Spark Trend per Chiller"
         
         customiseChart(rule1x: rule1xChiller1, rule1y: rule1yChiller1, rule2x: rule2xChiller1, rule2y: rule2yChiller1, rule3x: rule3xChiller1, rule3y: rule3yChiller1, rule4x: rule4xChiller1, rule4y: rule4yChiller1, rule5x: rule5xChiller1, rule5y: rule5yChiller1, rule6x: rule6xChiller1, rule6y: rule6yChiller1, rule7x: rule7xChiller1, rule7y: rule7yChiller1, suppressedSparksX: suppressedXChiller1, suppressedSparksY: suppressedYChiller1, exsuppressedSparksX: exsuppressedXChiller1, exsuppressedSparksY: exsuppressedYChiller1, CombinedChartView: chiller1Chart, labelRule1: "Rule 1", labelRule2: "Rule 2", labelRule3: "Rule 3", labelRule4: "Rule 4", labelRule5: "Rule 5", labelRule6: "Rule 6", labelRule7: "Rule 7", labelSuppressed: "Suppressed Alarms", labelExsuppressed: "Ex-Suppressed Alarms")
-            
+        
+        self.hidesBottomBarWhenPushed = false
+        
+        Global.chiller1x = Double(chiller1Chart.xAxis.labelPosition.rawValue)
+        print(String(format: "%.2f", Global.chiller1x ?? 0))
     }
     
     override func didReceiveMemoryWarning() {
@@ -196,6 +205,7 @@ class screen2controller: UIViewController {
         
         //4) assign all the data into the combined chart
         CombinedChartView.data = combinedData
+        
         
     }
     

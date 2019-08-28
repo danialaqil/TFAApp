@@ -68,6 +68,7 @@ class LineChartController: UIViewController {
     let yScatter16: [Double] = [7, 1]
 
     
+    @IBOutlet weak var backButton: UIBarButtonItem!
     
     @IBOutlet weak var lineChart1: CombinedChartView!
     @IBOutlet weak var lineChart2: CombinedChartView!
@@ -106,6 +107,7 @@ class LineChartController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = "Chiller 1"
+        
         /*
         lineChart1.setVisibleXRangeMaximum(5)
         lineChart1.setVisibleXRangeMinimum(0)
@@ -140,6 +142,9 @@ class LineChartController: UIViewController {
         lineChart16.setVisibleXRangeMaximum(5)
         lineChart16.setVisibleXRangeMinimum(0)
         */
+        
+        self.hidesBottomBarWhenPushed = true
+
         
         lineChart1.pinchZoomEnabled = true
         lineChart1.doubleTapToZoomEnabled = true
@@ -248,6 +253,10 @@ class LineChartController: UIViewController {
     
     override func didReceiveMemoryWarning() {
        super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func unwindToViewController (sender: UIBarButtonItem){
+        
     }
 
     
