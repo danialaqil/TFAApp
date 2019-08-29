@@ -48,7 +48,7 @@
 		CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController3.swift; sourceTree = "<group>"; };
 		CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController4.swift; sourceTree = "<group>"; };
 		CC65E18022D3326900CEB2D2 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
-		CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sparkTrendController.swift; path = ../sparkTrendController.swift; sourceTree = "<group>"; };
+		CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparkTrendController.swift; sourceTree = "<group>"; };
 		CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController.swift; sourceTree = "<group>"; };
 		CCAE25EA2316565A00204255 /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
 		CCBCE1342314D1F30056F4B1 /* screen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = screen2.storyboard; sourceTree = "<group>"; };
@@ -91,6 +91,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CC023E822317B2E200CC9CCE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC5D8DB322C99ABC003793CE /* ViewController.swift */,
+				CCBCE1392314D2B50056F4B1 /* screen2controller.swift */,
+				CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */,
+				CC65E17A22D3244E00CEB2D2 /* LineChartController2.swift */,
+				CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */,
+				CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */,
+				CC65E18022D3326900CEB2D2 /* HistoryController.swift */,
+				CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		CC5D8DA522C99ABC003793CE = {
 			isa = PBXGroup;
 			children = (
@@ -112,21 +127,13 @@
 		CC5D8DB022C99ABC003793CE /* AlarmChartsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CC023E822317B2E200CC9CCE /* View Controllers */,
 				CCEC194F2303B001001F25FE /* Storyboards */,
 				CC5D8DB122C99ABC003793CE /* AppDelegate.swift */,
-				CC5D8DB322C99ABC003793CE /* ViewController.swift */,
-				CCBCE1392314D2B50056F4B1 /* screen2controller.swift */,
-				CC8BFB9D22CDD62B00871EE7 /* LineChartController.swift */,
-				CC65E17A22D3244E00CEB2D2 /* LineChartController2.swift */,
-				CC65E17C22D3304400CEB2D2 /* LineChartController3.swift */,
-				CC65E17E22D3314D00CEB2D2 /* LineChartController4.swift */,
-				CC65E18022D3326900CEB2D2 /* HistoryController.swift */,
-				CC81DC6522E83F3E00831ABE /* sparkTrendController.swift */,
+				CCAE25EA2316565A00204255 /* Singletons.swift */,
 				CC5D8DBB22C99ABF003793CE /* Assets.xcassets */,
-				CC5D8DBD22C99ABF003793CE /* LaunchScreen.storyboard */,
 				CC5D8DC022C99ABF003793CE /* Info.plist */,
 				CC5D8DB822C99ABC003793CE /* AlarmChartsApp.xcdatamodeld */,
-				CCAE25EA2316565A00204255 /* Singletons.swift */,
 			);
 			path = AlarmChartsApp;
 			sourceTree = "<group>";
@@ -134,6 +141,7 @@
 		CCEC194F2303B001001F25FE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				CC5D8DBD22C99ABF003793CE /* LaunchScreen.storyboard */,
 				CC5D8DB522C99ABC003793CE /* Main.storyboard */,
 				CCBCE1342314D1F30056F4B1 /* screen2.storyboard */,
 				CCEC19502303B03C001F25FE /* pieChart.storyboard */,

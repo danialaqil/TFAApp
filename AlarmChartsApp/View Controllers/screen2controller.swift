@@ -62,13 +62,30 @@ class screen2controller: UIViewController {
         
         self.hidesBottomBarWhenPushed = false
         
-        Global.chiller1x = Double(chiller1Chart.xAxis.labelPosition.rawValue)
-        print(String(format: "%.2f", Global.chiller1x ?? 0))
+        chiller1Chart.rightAxis.enabled = false
+        chiller1Chart.xAxis.labelPosition = .bottom
+        
+       
+        //let xString =
+   
+        //print(\Highlight.x)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    public func getMarkerPosition(highlight: Highlight) -> CGPoint
+    {
+        
+        print(String(highlight.x))
+        //print(String(highlight.drawX))
+        return CGPoint(x: highlight.drawX, y: highlight.drawY)
+        
+        
+        
+    }
+
     
     func customiseChart (rule1x: [Double], rule1y: [Double], rule2x: [Double], rule2y: [Double], rule3x: [Double], rule3y: [Double], rule4x: [Double], rule4y: [Double], rule5x: [Double], rule5y: [Double], rule6x: [Double], rule6y: [Double], rule7x: [Double], rule7y: [Double], suppressedSparksX: [Double], suppressedSparksY: [Double], exsuppressedSparksX: [Double], exsuppressedSparksY: [Double], CombinedChartView: CombinedChartView, labelRule1: String, labelRule2: String, labelRule3: String, labelRule4: String, labelRule5: String, labelRule6: String, labelRule7: String, labelSuppressed: String, labelExsuppressed: String)  {
         
