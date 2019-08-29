@@ -19,15 +19,11 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    // 'fake data'    https://api.coindesk.com/v1/bpi/currentprice.json
-
+    // 'fake data' test    https://api.coindesk.com/v1/bpi/currentprice.json
 
     @IBOutlet weak var chillerOne: PieChartView!
-    
     @IBOutlet weak var chillerTwo: PieChartView!
-    
     @IBOutlet weak var chillerThree: PieChartView!
-    
     @IBOutlet weak var chillerFour: PieChartView!
     
     let sparkType = ["Spark 1", "Spark 2", "Spark 3", "Spark 4", "Spark 5"]
@@ -40,10 +36,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = "Summary"
-        // Do any additional setup after loading the view.
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller1.map{ Double($0) }, pieChartView: chillerOne, label: "Chiller 1")
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller2.map{ Double($0) }, pieChartView: chillerTwo, label: "Chiller 2")
         customizeChart(dataPoints: sparkType, values: sparkNumbersChiller3.map{ Double($0) }, pieChartView: chillerThree, label: "Chiller 3")
+        //chiller 4 is empty as it does not have any data
         //customizeChart(dataPoints: sparkType, values: sparkNumbersChiller4.map{ Double($0) }, pieChartView: chillerFour, label: "Chiller 4")
         
         

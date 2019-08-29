@@ -123,20 +123,11 @@ class HistoryController: UITableViewController, NSFetchedResultsControllerDelega
         alertController.addTextField { (textField) in
             textField.placeholder = "Insert comments (if any), or NIL"
         }
-        
-        //work on fullscreen display
-        //alertController.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+
         alertController.addAction(saveAction)
         alertController.addAction(cancelAction)
-        /*
-        let height:NSLayoutConstraint = NSLayoutConstraint(item: alertController.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.view.frame.height * 0.80)
-        let width:NSLayoutConstraint = NSLayoutConstraint(item: alertController.view!, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 2, constant: self.view.frame.width * 0.80)
-        
-        //width doesnt work
-        alertController.view.addConstraint(height)
-        alertController.view.addConstraint(width)
-        */
-        
+
+        //popover controller is important for iPad apps. if not present it would not load
         if let popoverController = alertController.popoverPresentationController {
             popoverController.sourceView = self.view;
             popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0.0, height: 0.0)
