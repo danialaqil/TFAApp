@@ -386,15 +386,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7sr-is-361"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3za-hH-O8F">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="B7X-0Y-qks">
-                            <connections>
-                                <segue destination="b5u-F2-fRW" kind="show" id="tJM-Z2-GFT"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="3za-hH-O8F"/>
                     <connections>
-                        <outlet property="backButton" destination="B7X-0Y-qks" id="pDg-pe-Vkg"/>
                         <outlet property="graph10Controller" destination="Bon-Yp-6cZ" id="BjF-rg-BbU"/>
                         <outlet property="graph11Controller" destination="Lnu-AW-zwK" id="olB-VP-Uf2"/>
                         <outlet property="graph12Controller" destination="VG4-Vy-SdY" id="HkF-1y-Ka5"/>
@@ -427,7 +420,6 @@
                         <outlet property="lineChart7" destination="eSp-kQ-Adc" id="qK8-8j-CS5"/>
                         <outlet property="lineChart8" destination="xjT-dH-6BI" id="Wg0-we-XQ3"/>
                         <outlet property="lineChart9" destination="IUg-j4-6IC" id="yqi-Lw-IPL"/>
-                        <segue destination="wRN-DI-TNG" kind="show" id="sbu-ax-5Am"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpB-Wl-3Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>

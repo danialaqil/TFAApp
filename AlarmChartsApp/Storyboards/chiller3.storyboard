@@ -10,14 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--screen2-->
-        <scene sceneID="aw2-cd-cPL">
-            <objects>
-                <viewControllerPlaceholder storyboardName="screen2" id="gxG-hN-6y0" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6pc-7W-BLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3433" y="387"/>
-        </scene>
         <!--Line Chart Controller3-->
         <scene sceneID="IxA-jf-wNe">
             <objects>
@@ -386,15 +378,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mtr-9F-BP2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4OR-rP-jfK">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="FgC-oo-G3g">
-                            <connections>
-                                <segue destination="gxG-hN-6y0" kind="show" id="fhA-wP-gnR"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="4OR-rP-jfK"/>
                     <connections>
-                        <outlet property="backButton" destination="FgC-oo-G3g" id="1oD-gZ-9Hl"/>
                         <outlet property="graph10Controller" destination="E8d-Xx-k2e" id="kqU-79-vQj"/>
                         <outlet property="graph11Controller" destination="uXn-bC-rKF" id="MgX-jd-VVd"/>
                         <outlet property="graph12Controller" destination="dPi-8C-SeL" id="zmQ-2V-L5d"/>

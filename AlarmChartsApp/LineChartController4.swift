@@ -102,6 +102,7 @@ class LineChartController4: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addBackButton()
         navigationController?.navigationBar.topItem?.title = "Chiller 4"
         
         graph1Controller.isOn = false
@@ -291,6 +292,21 @@ class LineChartController4: UIViewController {
             lineChart16.isHidden = true
         }
     }
+    
+    //programitacally creating a back button
+    func addBackButton() {
+        let backButton = UIButton(type: .custom)
+        backButton.setTitle("Back", for: .normal)
+        
+        backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    }
+    //action for the back button
+    @IBAction func backAction(_ sender: UIButton) {
+        let _ = self.dismiss(animated: true, completion: nil)
+    }
+    
     
     func customiseChart (yValuesLine: [Double], xValuesLine: [Double], CombinedChartView: CombinedChartView, labelLine: String, labelScatter: String, xScatterPoints: [Double], yScatterPoints: [Double]) {
         

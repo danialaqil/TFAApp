@@ -68,7 +68,6 @@ class LineChartController: UIViewController {
     let yScatter16: [Double] = [7, 1]
 
     
-    @IBOutlet weak var backButton: UIBarButtonItem!
     
     @IBOutlet weak var lineChart1: CombinedChartView!
     @IBOutlet weak var lineChart2: CombinedChartView!
@@ -106,6 +105,8 @@ class LineChartController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addBackButton()
+       
         navigationController?.navigationBar.topItem?.title = "Chiller 1"
         
         /*
@@ -255,10 +256,19 @@ class LineChartController: UIViewController {
        super.didReceiveMemoryWarning()
     }
     
-    @IBAction func unwindToViewController (sender: UIBarButtonItem){
-        
-    }
+   //programitacally creating a back button
+    func addBackButton() {
+        let backButton = UIButton(type: .custom)
+        backButton.setTitle("Back", for: .normal)
 
+        backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    }
+    //action for the back button
+    @IBAction func backAction(_ sender: UIButton) {
+        let _ = self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func graph1Display(_ sender: UISwitch) {
         if graph1Controller.isOn {
