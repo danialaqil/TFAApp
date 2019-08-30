@@ -81,7 +81,7 @@ class screen2controller: UIViewController {
         //print(String(highlight.drawX))
         return CGPoint(x: highlight.drawX, y: highlight.drawY)
         
-        
+        // this function does not work. Have to figure out how to get the x value of the highlight/marker
         
     }
 
